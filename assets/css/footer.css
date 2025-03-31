@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #fff; 
+    color: #000; 
+    padding: 40px 0;
+    width: 100%;
+    border-top: 2px solid #d81b60;
+    margin-top: 40px;
+}
+
+.footer-container {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    color: #000; /* Chữ đen như hình 1 */
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #000; /* Chữ đen như hình 1 */
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #000; /* Chữ đen như hình 1 */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #000; /* Chữ đen như hình 1 */
+}
+
+.footer-column ul li:hover {
+    text-decoration: underline;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd; /* Thêm viền cho input để giống hình 1 */
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #ff4d4d; /* Màu đỏ như hình 1 */
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.newsletter-form button:hover {
+    background-color: #e04343; /* Màu đỏ đậm hơn khi hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0; /* Đường viền trên footer-bottom màu xám nhạt như hình 2 */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #000; /* Chữ đen như hình 1 */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .newsletter-form {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column p,
+    .footer-column ul li,
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

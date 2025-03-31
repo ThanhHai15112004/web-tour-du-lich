@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+    <link rel="stylesheet" href="/assets/css/navigation.css">
+    <link rel="stylesheet" href="/assets/css/content.css">
+    <link rel="stylesheet" href="/assets/css/destination.css">
+    <link rel="stylesheet" href="/assets/css/service.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="top-nav-container">
+            <div class="top-nav">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/imgs/logos/logo3.jpg" alt="Tour Logo">
+                </a>
+                <div class="search-bar">
+                    <div class="search-input-container">
+                      
+                      <input type="text" placeholder="Tìm theo điểm đến, hoạt động">
+                    </div>
+                </div>
+
+                <div class="user-options">
+                    <div class="language-button" id="languageBtn">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" class="flag-icon">
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="currency-button" id="currencyBtn">
+                        <span>VND</span>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <a href="#">Trợ giúp</a>
+                    <a href="#">Xem gần đây</a>
+                    <a href="#">Đăng ký</a>
+                    <a href="#" class="btn">Đăng nhập</a>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav-container">
+            <div class="bottom-nav">
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="#">Giới Thiệu Về Tour</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="#">Đặt Vé Máy Bay</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="#">Đặt Vé Vui Chơi</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/datvetau.html">Đặt Vé Tàu</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="#">Giới Thiệu</a>
+                </div>
+              </div>
+        </div>
+
+       
+
+
+       
+        
+        <!-- Dropdown tiền tệ -->
+        <div class="currency-dropdown" id="currencyDropdown">
+            <div class="currency-section">
+            <div class="currency-header">Đơn vị tiền tệ được đề nghị</div>
+            <div class="currency-columns">
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code highlight">VND</div><div class="currency-name highlight">Việt Nam Đồng</div></div>
+                <div class="currency-item"><div class="currency-code">TWD</div><div class="currency-name">Đài Tệ</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">HKD</div><div class="currency-name">Dollar Hong Kong</div></div>
+                <div class="currency-item"><div class="currency-code">CNY</div><div class="currency-name">Nhân Dân Tệ</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">SGD</div><div class="currency-name">Dollar Singapore</div></div>
+                <div class="currency-item"><div class="currency-code">KRW</div><div class="currency-name">Won Hàn Quốc</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">USD</div><div class="currency-name">Dollar Mỹ</div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="currency-section">
+            <div class="currency-header">Tiền tệ khác</div>
+                <div class="currency-columns">
+                    <div class="currency-column">
+                        <div class="currency-item"><div class="currency-code">AED</div><div class="currency-name">Dirham Ả Rập thống nhất</div></div>
+                        <div class="currency-item"><div class="currency-code">DKK</div><div class="currency-name">Krone Đan Mạch</div></div>
+                        <div class="currency-item"><div class="currency-code">GBP</div><div class="currency-name">Bảng Anh</div></div>
+                        <div class="currency-item"><div class="currency-code">ISK</div><div class="currency-name">Krona Iceland</div></div>
+                        <div class="currency-item"><div class="currency-code">LAK</div><div class="currency-name">Kip Lào</div></div>
+                    </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">MUR</div><div class="currency-name">Mauritian Rupee</div></div>
+                    <div class="currency-item"><div class="currency-code">NZD</div><div class="currency-name">Dollar New Zealand</div></div>
+                    <div class="currency-item"><div class="currency-code">SEK</div><div class="currency-name">Krona Thụy Điển</div></div>
+                    <div class="currency-item"><div class="currency-code">AUD</div><div class="currency-name">Dollar Úc</div></div>
+                    <div class="currency-item"><div class="currency-code">EGP</div><div class="currency-name">Bảng Ai Cập</div></div>
+                </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">IDR</div><div class="currency-name">Rupiah Indonesia</div></div>
+                    <div class="currency-item"><div class="currency-code">JOD</div><div class="currency-name">Dinar Jordan</div></div>
+                    <div class="currency-item"><div class="currency-code">MAD</div><div class="currency-name">Ma-rốc Diraham</div></div>
+                    <div class="currency-item"><div class="currency-code">MXN</div><div class="currency-name">Peso Mexico</div></div>
+                    <div class="currency-item"><div class="currency-code">OMR</div><div class="currency-name">Rial Omani</div></div>
+                </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">THB</div><div class="currency-name">Bạt Thái</div></div>
+                    <div class="currency-item"><div class="currency-code">CAD</div><div class="currency-name">Đô Canada</div></div>
+                    <div class="currency-item"><div class="currency-code">EUR</div><div class="currency-name">Euro</div></div>
+                    <div class="currency-item"><div class="currency-code">ILS</div><div class="currency-name">Shekel Israeli</div></div>
+                    <div class="currency-item"><div class="currency-code">JPY</div><div class="currency-name">Yên Nhật</div></div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Banner -->
+    <div class="banner container">
+        <video autoplay muted loop>
+            <source src="/assets/video/intro.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1>Thế giới tour trong tay bạn</h1>
+            <p>Phục vụ tận tâm, giá siêu ưu đãi</p>
+            <div class="form-container">
+                <input type="text" placeholder="Bạn muốn đi đâu?">
+                <div class="form-group">
+                    <input type="date" placeholder="dd/mm/yyyy">
+                    <select>
+                        <option>Khởi hành từ Hồ Chí Minh</option>
+                        <option>Khởi hành từ Hà Nội</option>
+                        <option>Khởi hành từ Đà Nẵng</option>
+                    </select>
+                    <select>
+                        <option>1 người lớn</option>
+                        <option>2 người lớn</option>
+                        <option>3 người lớn</option>
+                        <option>4+ người lớn</option>
+                    </select>
+                    <button>Tìm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thanh đánh giá -->
+    <div class="rating-section">
+      <div class="rating-box">
+          <img src="/assets/imgs/icon/icon1.svg" alt="Tours">
+          <div class="text">
+              <p>1.000+ tours</p>
+              <span>Chất lượng trong và ngoài nước</span>
+          </div>
+      </div>
+      <div class="rating-box">
+          <img src="/assets/imgs/icon/icon2.svg" alt="Reviews">
+          <div class="text">
+              <p>10K+ đánh giá 5 sao</p>
+              <span>Từ những khách hàng đã đặt tour</span>
+          </div>
+      </div>
+      <div class="rating-box">
+          <img src="/assets/imgs/icon/icon3.svg" alt="Discount">
+          <div class="text">
+              <p>100+ ưu đãi mỗi ngày</p>
+              <span>Cho khách đặt sớm, theo nhóm, phút chót</span>
+          </div>
+      </div>
+  </div>
+
+
+
+        <!-- Điều hướng chính --> 
+        <div class="main-navigation"> 
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/tour-trong-nuoc" class="nav-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="11" cy="11" r="8"></circle> <line x1="21" y1="21" x2="16.65" y2="16.65"></line> <line x1="11" y1="8" x2="11" y2="14"></line> <line x1="8" y1="11" x2="14" y2="11"></line> </svg> 
+                <p><strong>Tour TRONG NƯỚC</strong></p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/tour-nuoc-ngoai" class="nav-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#3366CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <circle cx="11" cy="11" r="8"></circle> <line x1="21" y1="21" x2="16.65" y2="16.65"></line> <line x1="11" y1="8" x2="11" y2="14"></line> <line x1="8" y1="11" x2="14" y2="11"></line> </svg> 
+                <p><strong>Tour NƯỚC NGOÀI</strong></p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/visa" class="nav-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D81B60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="4" width="18" height="16" rx="2"></rect> <line x1="8" y1="2" x2="8" y2="6"></line> <line x1="16" y1="2" x2="16" y2="6"></line> <line x1="3" y1="10" x2="21" y2="10"></line> <path d="M9 16l2 2 4-4"></path> </svg> 
+                <p>Dịch vụ làm <span style="color: #D81B60;">VISA</span></p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/ve-may-bay" class="nav-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0097A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path> <path d="M17.5 7.5L22 2"></path> <path d="M15 5.5L14 4"></path> <path d="M19 9.5L20 11"></path> </svg> 
+                <p><span style="color: #0097A7;">VÉ MÁY BAY GIÁ RẺ</span></p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/khach-san" class="nav-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4DB6AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 14h18v7H3z"></path> <path d="M21 7V4a1 1 0 00-1-1H4a1 1 0 00-1 1v3"></path> <path d="M21 14v-3a2 2 0 00-2-2H5a2 2 0 00-2 2v3"></path> <path d="M12 4v16"></path> </svg> 
+                <p><span style="color: #4DB6AC;">ĐẶT KHÁCH SẠN</span></p> 
+            </a>
+            </div>
+        </div>
+        
+        <!-- Category Navigation Icons --> 
+        <div class="category-navigation"> 
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/tour-doanh-nghiep" class="category-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect> <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"></path> <path d="M6 11h4"></path> <path d="M14 11h4"></path> <path d="M6 15h4"></path> <path d="M14 15h4"></path> </svg> 
+                <p>Tour Doanh Nghiệp</p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/hanh-huong" class="category-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path> <polyline points="9 22 9 12 15 12 15 22"></polyline> <path d="M12 7a1 1 0 100-2 1 1 0 000 2z"></path> </svg> 
+                <p>Du lịch Hành Hương</p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/tour-doc-la" class="category-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <circle cx="12" cy="12" r="10"></circle> <path d="M12 2a15 15 0 014 10 15 15 0 01-4 10 15 15 0 01-4-10 15 15 0 014-10z"></path> <path d="M2 12h20"></path> </svg> 
+                <p>Tour Độc Lạ</p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/du-lich-mua-dong" class="category-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 3v18"></path> <path d="M17.5 7.5L12 12 6.5 7.5"></path> <path d="M17.5 16.5L12 12 6.5 16.5"></path> <path d="M19 6.3L5 17.7"></path> <path d="M5 6.3L19 17.7"></path> </svg> 
+                <p>Du lịch Mùa Đông</p> 
+            </a>
+            </div>
+            
+            <div class="link-wrapper">
+            <div class="rainbow-border"></div>
+            <a href="/hoa-anh-dao" class="category-box"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#FF9EBF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"> <path d="M12 12c2.5-2.5 4-5 4-7s-2-4-4-4-4 2-4 4 1.5 4.5 4 7z"></path> <path d="M12 12c-2.5 2.5-4 5-4 7s2 4 4 4 4-2 4-4-1.5-4.5-4-7z"></path> <path d="M12 12c2.5 2.5 5 4 7 4s4-2 4-4-2-4-4-4-4.5 1.5-7 4z"></path> <path d="M12 12c-2.5-2.5-5-4-7-4s-4 2-4 4 2 4 4 4 4.5-1.5 7-4z"></path> </svg> 
+                <p>Tour Hoa Anh Đào 2025</p> 
+            </a>
+            </div>
+        </div>
+
+
+
+        <!-- Container cho Tours thường -->
+        <div id="regular-tours"></div>
+        
+        <!-- Container cho Tours giảm giá -->
+        <div id="sale-tours"></div>
+        
+        <!-- Container cho Tours trong nước -->
+        <div id="domestic-tours"></div>
+        
+        <!-- Container cho Tours nước ngoài -->
+        <div id="international-tours"></div>
+
+        <!-- Dịch vụ -->
+        <div class="service-container container">
+            <div class="service-grid">
+                <!-- Service 1: Khách Sạn -->
+                <div class="service-card" style="background-color: #ff4d94;">
+                    <div class="rainbow-border"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <img src="https://dulichviet.com.vn/images/main/i-ads-1.svg" alt="Khách Sạn Icon">
+                        </div>
+                        <div class="service-info">
+                            <h3>KHÁCH SẠN</h3>
+                            <p>Khách sạn tốt nhất tại các địa điểm du lịch nổi tiếng.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2: Thuê Xe -->
+                <div class="service-card" style="background-color: #007bff;">
+                    <div class="rainbow-border"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <img src="https://dulichviet.com.vn/images/main/i-ads-2.svg" alt="Thuê Xe Icon">
+                        </div>
+                        <div class="service-info">
+                            <h3>THUÊ XE</h3>
+                            <p>Dịch vụ thuê xe giá tốt từ các nhà xe uy tín và chất lượng</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3: Visa -->
+                <div class="service-card" style="background-color: #ff8c00;">
+                    <div class="rainbow-border"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <img src="https://dulichviet.com.vn/images/main/i-ads-3.svg" alt="Visa Icon">
+                        </div>
+                        <div class="service-info">
+                            <h3>VISA</h3>
+                            <p>Dịch vụ Visa nhanh, rẻ, Visa trọn gói, thủ tục đơn giản</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4: Vé Máy Bay -->
+                <div class="service-card" style="background-color: #00b7eb;">
+                    <div class="rainbow-border"></div>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <img src="https://dulichviet.com.vn/images/main/i-ads-4.svg" alt="Vé Máy Bay Icon">
+                        </div>
+                        <div class="service-info">
+                            <h3>VÉ MÁY BAY</h3>
+                            <p>Vé máy bay giá rẻ nhất, nhiều khuyến mãi hấp dẫn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section_experience container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-4 col-12 block-title">
+                    <div class="title-old">
+                        Khám phá thế giới
+                    </div>
+                    <h2>
+                        Các trải nghiệm & hoạt động
+                    </h2>
+                    <div class="des">
+                        ND Travel cung cấp cho bạn rất nhiều loại hình du lịch với<br class="d-xl-block d-none"> đa dạng các
+                        trải nghiệm khác nhau. Đừng ngại ngần, hãy<br class="d-xl-block d-none"> chuẩn bị và sẵn sàng ngay!
+                    </div>
+                    <a href="" class="view-more" title="Xem thêm">
+                        Xem thêm
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                                fill="var(--highlight-color)">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-xl-7 col-lg-8 col-12 block-content">
+                    <div class="list-experience">
+                        <div class="item">
+                            <a href="/collections/all" title="Nghỉ dưỡng">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_1.png?1741856854988"
+                                    alt="Nghỉ dưỡng">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Nghỉ dưỡng">
+                                    Nghỉ dưỡng
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Cáp treo">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_2.png?1741856854988"
+                                    alt="Cáp treo">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Cáp treo">
+                                    Cáp treo
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Du thuyền">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_3.png?1741856854988"
+                                    alt="Du thuyền">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Du thuyền">
+                                    Du thuyền
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Mạo hiểm">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_4.png?1741856854988"
+                                    alt="Mạo hiểm">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Mạo hiểm">
+                                    Mạo hiểm
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Khám phá">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_5.png?1741856854988"
+                                    alt="Khám phá">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Khám phá">
+                                    Khám phá
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Dưới nước">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_6.png?1741856854988"
+                                    alt="Dưới nước">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Dưới nước">
+                                    Dưới nước
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Ẩm thực">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_7.png?1741856854988"
+                                    alt="Ẩm thực">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Ẩm thực">
+                                    Ẩm thực
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="item">
+                            <a href="/collections/all" title="Cắm trại">
+                                <img class="img-responsive"
+                                    src="https://bizweb.dktcdn.net/100/505/645/themes/956063/assets/img_experience_8.png?1741856854988"
+                                    alt="Cắm trại">
+                            </a>
+                            <h3>
+                                <a href="/collections/all" title="Cắm trại">
+                                    Cắm trại
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+        <!-- Điều hướng cuối trang -->
+        <div class="destination-container">
+            <div class="destination-header">
+            <h2>Các điểm du lịch phổ biến</h2>
+            <p>Bao La Thế Giới Bốn Bể Là Nhà</p>
+            </div>
+            <div class="destination-grid">
+            <!-- Destination 1 -->
+            <div class="destination-card large">
+                <div class="rainbow-border"></div>
+                <img src="/assets/imgs/destinations/destination1.jpg" alt="Trung Quốc">
+                <div class="destination-info">
+                <h3>Trung Quốc</h3>
+                <p>146 Tours</p>
+                </div>
+            </div>
+            <!-- Destination 2 -->
+            <div class="destination-card">
+                <div class="rainbow-border"></div>
+                <img src="/assets/imgs/destinations/destination2.jpg" alt="Singapore">
+                <div class="destination-info">
+                <h3>Singapore</h3>
+                <p>35 Tours</p>
+                </div>
+            </div>
+            <!-- Destination 3 -->
+            <div class="destination-card">
+                <div class="rainbow-border"></div>
+                <img src="/assets/imgs/destinations/destination3.jpg" alt="Thái Lan">
+                <div class="destination-info">
+                <h3>Thái Lan</h3>
+                <p>48 Tours</p>
+                </div>
+            </div>
+            <!-- Destination 4 -->
+            <div class="destination-card">
+                <div class="rainbow-border"></div>
+                <img src="/assets/imgs/destinations/destination4.jpg" alt="Châu Âu">
+                <div class="destination-info">
+                <h3>Châu Âu</h3>
+                <p>22 Tours</p>
+                </div>
+            </div>
+            <!-- Destination 5 -->
+            <div class="destination-card">
+                <div class="rainbow-border"></div>
+                <img src="/assets/imgs/destinations/destination5.jpg" alt="Nhật Bản">
+                <div class="destination-info">
+                <h3>Nhật Bản</h3>
+                <p>48 Tours</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>CÔNG TY CỔ PHẦN TRUYỀN THÔNG Hậu Hải Quân Travel</h3>
+                <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Văn phòng: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Điện thoại: 012 3456789 | Hotline: 1900 1234</p>
+                <p>Website: hauhaiquantravel.com.vn | Email: hauhaiquantravel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Góc khách hàng</h3>
+                <ul>
+                    <li>Chính sách đặt tour</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Ý kiến khách hàng</li>
+                    <li>Phiếu góp ý</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Đăng ký nhận thông tin khuyến mãi</h3>
+                <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ</p>
+            <p>Số GP/ No: 79-042/2022/TCDL – GP LHQT</p>
+            <p>Do TCDL cấp ngày 30/11/2009 – Cấp đổi ngày 06/06/2022</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Dropdown ngôn ngữ -->
+    <div class="language-dropdown" id="languageDropdown">
+        <div class="language-header">Chọn ngôn ngữ</div>
+        <div class="language-columns">
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/au.png" class="language-flag">
+            <span class="language-name">English (Australia)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/in.png" class="language-flag">
+            <span class="language-name">English (India)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ph.png" class="language-flag">
+            <span class="language-name">English (Philippines)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/gb.png" class="language-flag">
+            <span class="language-name">English (UK)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/tw.png" class="language-flag">
+            <span class="language-name">繁體中文</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/th.png" class="language-flag">
+            <span class="language-name">ไทย</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+            <span class="language-name">Bahasa Malaysia</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/de.png" class="language-flag">
+            <span class="language-name">Deutsch</span>
+            </div>
+        </div>
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ca.png" class="language-flag">
+            <span class="language-name">English (Canada)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+            <span class="language-name">English (Malaysia)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/sg.png" class="language-flag">
+            <span class="language-name">English (Singapore)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/intl.png" class="language-flag">
+            <span class="language-name">English (International)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/jp.png" class="language-flag">
+            <span class="language-name">日本語</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/vn.png" class="language-flag">
+            <span class="language-name highlight">Tiếng Việt</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/fr.png" class="language-flag">
+            <span class="language-name">Français</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/it.png" class="language-flag">
+            <span class="language-name">Italiano</span>
+            </div>
+        </div>
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/hk.png" class="language-flag">
+            <span class="language-name">English (Hong Kong, SAR)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/nz.png" class="language-flag">
+            <span class="language-name">English (New Zealand)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/us.png" class="language-flag">
+            <span class="language-name">English (US)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/cn.png" class="language-flag">
+            <span class="language-name">简体中文</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/kr.png" class="language-flag">
+            <span class="language-name">한국어</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/id.png" class="language-flag">
+            <span class="language-name">Bahasa Indonesia</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/es.png" class="language-flag">
+            <span class="language-name">Español</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ru.png" class="language-flag">
+            <span class="language-name">Русский</span>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+      
+    <script>
+        const languageBtn = document.getElementById('languageBtn');
+        const languageDropdown = document.getElementById('languageDropdown');
+      
+        const currencyBtn = document.getElementById('currencyBtn');
+        const currencyDropdown = document.getElementById('currencyDropdown');
+      
+        // Toggle language dropdown
+        languageBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+      
+          const isLanguageOpen = languageDropdown.classList.contains('show');
+      
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+      
+          if (!isLanguageOpen) {
+            languageDropdown.classList.add('show');
+          }
+        });
+      
+        // Toggle currency dropdown
+        currencyBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+      
+          const isCurrencyOpen = currencyDropdown.classList.contains('show');
+      
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+      
+          if (!isCurrencyOpen) {
+            currencyDropdown.classList.add('show');
+          }
+        });
+      
+        // Đóng tất cả dropdown khi click ngoài
+        document.addEventListener('click', () => {
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+        });
+      
+        function closeLanguageDropdown() {
+          languageDropdown.classList.remove('show');
+        }
+      
+        function closeCurrencyDropdown() {
+          currencyDropdown.classList.remove('show');
+        }
+    </script>
+    <script src="/assets/scripts/tour.js"></script>  
+    <script type="text/javascript" src="https://webquangnam.com/jsShare/hoa-dao-roi.js"></script>    
+</body>
+</html>

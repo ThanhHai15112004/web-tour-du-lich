@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: #f5f7fa; /* Màu xanh dương nhạt nhẹ hơn, dễ chịu hơn */
+    --secondary-bg-color: #ffffff; /* Màu trắng */
+    --text-color: #333333; /* Màu chữ chính */
+    --highlight-color: #add8e6; /* Màu lightblue */
+    --transition-bg-color: #f0f4f8; /* Màu trung gian để chuyển tiếp giữa các section */
+  }
+
+  .service-container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 100px;
+}
+
+.service-card {
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    overflow: visible;
+    background-clip: content-box; /* Quan trọng: ngăn background phủ lên vùng padding */
+}
+
+.service-card:hover {
+    color: #FF6600;
+}
+
+/* Thêm wrapper mới cho nội dung */
+.service-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.service-icon {
+    margin-right: 15px;
+}
+
+.service-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.service-info h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.service-info p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+    color: #fff;
+}
+
+/* Hiệu ứng viền cầu vồng cho service-card */
+.service-card .rainbow-border {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 15px; /* Theo .nav-box */
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 400%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    padding: 2px;
+}
+
+/* Hiển thị và hoạt ảnh viền khi hover */
+.service-card:hover .rainbow-border {
+    opacity: 1;
+    animation: borderFlow 3s linear infinite;
+}
+
+/* Hoạt ảnh chuyển động gradient */
+@keyframes borderFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 50px; /* Giảm margin ở màn hình nhỏ hơn */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+        margin: 0 20px; /* Giảm margin ở màn hình rất nhỏ */
+    }
+}
+
+
+
+/* Section Experience */
+
+.container {
+    width: 100%;
+}
+
+.section_experience {
+    padding: 30px 0;
+    background-color: #f9f9f9; /* Màu xám nhạt để tạo sự phân biệt nhẹ */
+
+  }
+  
+  .section_experience .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Căn đều các block */
+    margin: 0 150px; /* Thay đổi margin để căn giữa */
+  }
+  
+  .section_experience .block-title {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .section_experience .title-old {
+    font-size: 14px;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  
+  .section_experience h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 12px;
+  }
+  
+  .section_experience .des {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .section_experience .view-more {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--highlight-color);
+    text-decoration: none;
+  }
+  
+  .section_experience .view-more svg {
+    margin-left: 8px;
+  }
+  
+  .section_experience .block-content {
+    flex: 2;
+    min-width: 500px;
+  }
+  
+  .section_experience .list-experience {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between; /* Căn đều các item */
+  }
+  
+  .section_experience .item {
+    flex: 1 1 calc(25% - 20px); /* 4 items per row */
+    text-align: center;
+  }
+  
+  .section_experience .item img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .section_experience .item h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .section_experience .item h3 a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .section_experience .item h3 a:hover {
+    color: var(--highlight-color);
+  }
