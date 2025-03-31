@@ -103,7 +103,7 @@ body {
 .bottom-nav a {
     text-decoration: none;
     color: #333;
-    padding: 21px 64px; /* Cảm giác dễ click hơn */
+    padding: 18px 64px; /* Cảm giác dễ click hơn */
     border-radius: 10px;
     height: 100%; /* Đảm bảo không làm to nav */
     display: flex;
