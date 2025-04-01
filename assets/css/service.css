@@ -132,7 +132,6 @@ body {
 
 .section_experience {
   padding: 40px 0;
-  background-color: #f9f9f9;
   overflow: hidden;
 }
 
@@ -238,7 +237,6 @@ body {
 }
 
 .section_experience .item:hover img {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .section_experience .item h3 {
