@@ -1,3 +1,4 @@
+/* Base styles - Desktop trước */
 /* Điều hướng chính */
 .main-navigation {
     display: flex;
@@ -5,6 +6,7 @@
     gap: 15px;
     padding: 20px;
     background: #F5F7FA;
+    flex-wrap: wrap; /* Thêm flex-wrap để đảm bảo các phần tử có thể xuống dòng */
 }
 
 .nav-box {
@@ -32,7 +34,6 @@
 .nav-box:hover p,
 .nav-box:hover strong {
     color: #FF6600;
-    
 }
 
 .nav-box:hover span {
@@ -58,6 +59,7 @@
     gap: 60px;
     padding: 40px 16px;
     background: white;
+    flex-wrap: wrap; /* Thêm flex-wrap để đảm bảo các phần tử có thể xuống dòng */
 }
 
 .category-box {
@@ -69,7 +71,6 @@
     color: #333;
     padding: 16px;
 }
-
 
 .category-box:hover svg {
     stroke: #FF6600;
@@ -93,90 +94,185 @@
     color: #333;
 }
 
-/* Responsive adjustments */
+/* Thêm CSS cho hiệu ứng viền cầu vồng, giữ nguyên CSS hiện có */
+.main-navigation .link-wrapper,
+.category-navigation .link-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hiệu ứng viền cầu vồng */
+.main-navigation .rainbow-border,
+.category-navigation .rainbow-border {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 8px; /* Theo .nav-box */
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 400%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    padding: 2px;
+}
+
+/* Hiển thị và hoạt ảnh viền khi hover */
+.main-navigation .link-wrapper:hover .rainbow-border,
+.category-navigation .link-wrapper:hover .rainbow-border {
+    opacity: 1;
+    animation: borderFlow 3s linear infinite;
+}
+
+/* Hoạt ảnh chuyển động gradient */
+@keyframes borderFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 400% 50%;
+    }
+}
+
+/* Điều chỉnh để viền cầu vồng trong category-navigation tròn đều 4 góc */
+.category-navigation .rainbow-border {
+    padding: 3px; /* Làm cho viền dày hơn một chút */
+}
+
+/* Responsive cho Laptop và tablets lớn (1024px và nhỏ hơn) */
 @media (max-width: 1024px) {
     .main-navigation {
-        flex-wrap: wrap;
+        gap: 12px;
+        padding: 15px;
     }
     
     .nav-box {
         min-width: 180px;
-    }
-    
-    .category-navigation {
-        gap: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-box {
-        min-width: 150px;
         padding: 12px 15px;
     }
     
     .category-navigation {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-    
-    .category-box svg {
-        width: 40px;
-        height: 40px;
+        gap: 40px;
+        padding: 30px 12px;
     }
 }
 
- /* Thêm CSS cho hiệu ứng viền cầu vồng, giữ nguyên CSS hiện có */
- .main-navigation .link-wrapper,
- .category-navigation .link-wrapper {
-   position: relative;
-   display: inline-block;
- }
+/* Responsive cho máy tính bảng (768px và nhỏ hơn) */
+@media (max-width: 768px) {
+    .main-navigation {
+        gap: 10px;
+        padding: 12px;
+    }
+    
+    .nav-box {
+        min-width: 150px;
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    .nav-box svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    
+    .nav-box p {
+        font-size: 13px;
+    }
+    
+    .category-navigation {
+        gap: 25px;
+        padding: 25px 10px;
+    }
+    
+    .category-box {
+        padding: 12px;
+    }
+    
+    .category-box svg {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 8px;
+    }
+    
+    .category-box p {
+        font-size: 13px;
+    }
+}
 
- /* Hiệu ứng viền cầu vồng */
- .main-navigation .rainbow-border,
- .category-navigation .rainbow-border {
-   content: "";
-   position: absolute;
-   top: -2px;
-   left: -2px;
-   right: -2px;
-   bottom: -2px;
-   border-radius: 8px; /* Theo .nav-box */
-   background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
-   background-size: 400%;
-   z-index: 1;
-   opacity: 0;
-   transition: opacity 0.3s ease;
-   pointer-events: none;
-   mask:
-     linear-gradient(#fff 0 0) content-box,
-     linear-gradient(#fff 0 0);
-   -webkit-mask:
-     linear-gradient(#fff 0 0) content-box,
-     linear-gradient(#fff 0 0);
-   mask-composite: exclude;
-   -webkit-mask-composite: destination-out;
-   padding: 2px;
- }
+/* Responsive cho điện thoại di động (480px và nhỏ hơn) */
+@media (max-width: 480px) {
+    .main-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding: 10px;
+    }
+    
+    .nav-box {
+        min-width: calc(100% - 20px);
+        width: 100%;
+        max-width: 300px;
+        padding: 10px;
+    }
+    
+    .nav-box svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+    
+    .nav-box p {
+        font-size: 12px;
+    }
+    
+    .category-navigation {
+        gap: 15px;
+        padding: 20px 8px;
+        justify-content: space-around;
+    }
+    
+    .category-box {
+        width: calc(33.33% - 10px);
+        padding: 8px;
+    }
+    
+    .category-box svg {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 6px;
+    }
+    
+    .category-box p {
+        font-size: 11px;
+        margin: 3px 0 0 0;
+    }
+    
+    /* Điều chỉnh hiệu ứng cầu vồng cho điện thoại */
+    .main-navigation .rainbow-border,
+    .category-navigation .rainbow-border {
+        padding: 1px;
+    }
+}
 
- /* Hiển thị và hoạt ảnh viền khi hover */
- .main-navigation .link-wrapper:hover .rainbow-border,
- .category-navigation .link-wrapper:hover .rainbow-border {
-   opacity: 1;
-   animation: borderFlow 3s linear infinite;
- }
-
- /* Hoạt ảnh chuyển động gradient */
- @keyframes borderFlow {
-   0% {
-     background-position: 0% 50%;
-   }
-   100% {
-     background-position: 400% 50%;
-   }
- }
- 
- /* Điều chỉnh để viền cầu vồng trong category-navigation tròn đều 4 góc */
- .category-navigation .rainbow-border {
-   padding: 3px; /* Làm cho viền dày hơn một chút */
- }
+/* Responsive cho điện thoại nhỏ (320px và nhỏ hơn) */
+@media (max-width: 320px) {
+    .category-box {
+        width: calc(50% - 10px);
+    }
+    
+    .category-navigation {
+        gap: 10px;
+    }
+}
