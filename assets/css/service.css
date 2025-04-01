@@ -25,8 +25,8 @@ body {
   gap: 20px;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
   box-sizing: border-box;
+
 }
 
 .service-card {
@@ -126,8 +126,6 @@ body {
 .container {
   width: 100%;
   box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -144,6 +142,7 @@ body {
   margin-left: -15px;
   margin-right: -15px;
   box-sizing: border-box;
+  margin: 0 64px;
 }
 
 .section_experience .block-title {
@@ -267,9 +266,7 @@ body {
 
 /* Desktop (Large screens) */
 @media (min-width: 1200px) {
-  .container {
-      max-width: 1170px;
-  }
+
   
   .service-grid {
       grid-template-columns: repeat(4, 1fr);
@@ -308,9 +305,7 @@ body {
 
 /* Medium Desktop */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-      max-width: 960px;
-  }
+
   
   .service-grid {
       grid-template-columns: repeat(4, 1fr);
@@ -349,10 +344,7 @@ body {
 
 /* Tablet (Medium screens) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .container {
-      max-width: 720px;
-  }
-  
+
   .service-grid {
       grid-template-columns: repeat(3, 1fr);
       padding: 0 15px;

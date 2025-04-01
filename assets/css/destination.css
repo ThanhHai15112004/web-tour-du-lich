@@ -241,7 +241,6 @@ body {
 /* Large Desktop/Extra-wide screens */
 @media only screen and (min-width: 1200px) {
     .destination-container {
-        max-width: 1400px;
         margin: 0 auto;
     }
     
