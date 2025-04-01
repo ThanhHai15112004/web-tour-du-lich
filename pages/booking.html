@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <!-- Các thẻ meta cơ bản -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé - SKYLINE</title>
+    <!-- Liên kết CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <!-- Liên kết Font Awesome cho các icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-nav-container">
+            <div class="top-nav">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/imgs/logos/logo3.jpg" alt="Tour Logo">
+                </a>
+                <div class="search-bar">
+                    <div class="search-input-container">
+                      
+                      <input type="text" placeholder="Tìm theo điểm đến, hoạt động">
+                    </div>
+                </div>
+
+                <div class="user-options">
+                    <div class="language-button" id="languageBtn">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" class="flag-icon">
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="currency-button" id="currencyBtn">
+                        <span>VND</span>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <a href="#">Trợ giúp</a>
+                    <a href="#">Xem gần đây</a>
+                    <a href="#">Đăng ký</a>
+                    <a href="#" class="btn">Đăng nhập</a>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav-container">
+            <div class="bottom-nav">
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/about-tour.html">Giới Thiệu Về Tour</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/book-flight-tickets.html">Đặt Vé Máy Bay</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="#">Đặt Vé Vui Chơi</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/datvetau.html">Đặt Vé Tàu</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/about.html">Giới Thiệu</a>
+                </div>
+              </div>
+        </div>
+
+       
+
+
+       
+        
+        <!-- Dropdown tiền tệ -->
+        <div class="currency-dropdown" id="currencyDropdown">
+            <div class="currency-section">
+            <div class="currency-header">Đơn vị tiền tệ được đề nghị</div>
+            <div class="currency-columns">
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code highlight">VND</div><div class="currency-name highlight">Việt Nam Đồng</div></div>
+                <div class="currency-item"><div class="currency-code">TWD</div><div class="currency-name">Đài Tệ</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">HKD</div><div class="currency-name">Dollar Hong Kong</div></div>
+                <div class="currency-item"><div class="currency-code">CNY</div><div class="currency-name">Nhân Dân Tệ</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">SGD</div><div class="currency-name">Dollar Singapore</div></div>
+                <div class="currency-item"><div class="currency-code">KRW</div><div class="currency-name">Won Hàn Quốc</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">USD</div><div class="currency-name">Dollar Mỹ</div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="currency-section">
+            <div class="currency-header">Tiền tệ khác</div>
+                <div class="currency-columns">
+                    <div class="currency-column">
+                        <div class="currency-item"><div class="currency-code">AED</div><div class="currency-name">Dirham Ả Rập thống nhất</div></div>
+                        <div class="currency-item"><div class="currency-code">DKK</div><div class="currency-name">Krone Đan Mạch</div></div>
+                        <div class="currency-item"><div class="currency-code">GBP</div><div class="currency-name">Bảng Anh</div></div>
+                        <div class="currency-item"><div class="currency-code">ISK</div><div class="currency-name">Krona Iceland</div></div>
+                        <div class="currency-item"><div class="currency-code">LAK</div><div class="currency-name">Kip Lào</div></div>
+                    </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">MUR</div><div class="currency-name">Mauritian Rupee</div></div>
+                    <div class="currency-item"><div class="currency-code">NZD</div><div class="currency-name">Dollar New Zealand</div></div>
+                    <div class="currency-item"><div class="currency-code">SEK</div><div class="currency-name">Krona Thụy Điển</div></div>
+                    <div class="currency-item"><div class="currency-code">AUD</div><div class="currency-name">Dollar Úc</div></div>
+                    <div class="currency-item"><div class="currency-code">EGP</div><div class="currency-name">Bảng Ai Cập</div></div>
+                </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">IDR</div><div class="currency-name">Rupiah Indonesia</div></div>
+                    <div class="currency-item"><div class="currency-code">JOD</div><div class="currency-name">Dinar Jordan</div></div>
+                    <div class="currency-item"><div class="currency-code">MAD</div><div class="currency-name">Ma-rốc Diraham</div></div>
+                    <div class="currency-item"><div class="currency-code">MXN</div><div class="currency-name">Peso Mexico</div></div>
+                    <div class="currency-item"><div class="currency-code">OMR</div><div class="currency-name">Rial Omani</div></div>
+                </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">THB</div><div class="currency-name">Bạt Thái</div></div>
+                    <div class="currency-item"><div class="currency-code">CAD</div><div class="currency-name">Đô Canada</div></div>
+                    <div class="currency-item"><div class="currency-code">EUR</div><div class="currency-name">Euro</div></div>
+                    <div class="currency-item"><div class="currency-code">ILS</div><div class="currency-name">Shekel Israeli</div></div>
+                    <div class="currency-item"><div class="currency-code">JPY</div><div class="currency-name">Yên Nhật</div></div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+    <!-- Phần Chính - Form Đặt Vé -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <!-- Cột Trái - Thông Tin Sản Phẩm -->
+                <div class="booking-product">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/600x400" alt="VinWonders Phú Quốc" id="productImage">
+                    </div>
+                    <div class="product-info">
+                        <h1 id="productName">VinWonders Phú Quốc</h1>
+                        <p class="product-location"><i class="fas fa-map-marker-alt"></i> Phú Quốc, Kiên Giang</p>
+                        <div class="product-price">
+                            <div class="price-value" id="productPrice">750.000đ</div>
+                            <div class="price-original" id="productOriginalPrice">1.000.000đ</div>
+                        </div>
+                        <div class="product-description">
+                            <h3>Mô tả sản phẩm</h3>
+                            <p>VinWonders Phú Quốc là tổ hợp vui chơi giải trí đẳng cấp quốc tế với 6 phân khu chủ đề độc đáo, mang đến những trải nghiệm tuyệt vời cho mọi lứa tuổi.</p>
+                            <ul>
+                                <li>Vé vào cửa 1 ngày</li>
+                                <li>Bảo hiểm du lịch</li>
+                                <li>Hỗ trợ 24/7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cột Phải - Form Đặt Vé -->
+                <div class="booking-form">
+                    <h2>Thông tin đặt vé</h2>
+                    <form id="bookingForm">
+                        <!-- Trường chọn ngày tham quan -->
+                        <div class="form-group">
+                            <label for="visitDate">Ngày tham quan</label>
+                            <input type="date" id="visitDate" required>
+                        </div>
+
+                        <!-- Trường chọn loại vé -->
+                        <div class="form-group">
+                            <label for="ticketType">Loại vé</label>
+                            <select id="ticketType" required>
+                                <option value="">Chọn loại vé</option>
+                                <option value="adult">Người lớn (Từ 12 tuổi trở lên)</option>
+                                <option value="child">Trẻ em (Từ 1m - 1m4)</option>
+                                <option value="senior">Người cao tuổi (Từ 60 tuổi)</option>
+                            </select>
+                        </div>
+
+                        <!-- Trường điều chỉnh số lượng vé -->
+                        <div class="form-group">
+                            <label for="quantity">Số lượng</label>
+                            <div class="quantity-control">
+                                <button type="button" class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10" required>
+                                <button type="button" class="quantity-btn" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+
+                        <!-- Các trường thông tin cá nhân -->
+                        <div class="form-group">
+                            <label for="customerName">Họ và tên</label>
+                            <input type="text" id="customerName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="note">Ghi chú</label>
+                            <textarea id="note" rows="3"></textarea>
+                        </div>
+
+                        <!-- Phần tổng kết đơn hàng -->
+                        <div class="booking-summary">
+                            <h3>Tổng tiền</h3>
+                            <div class="summary-item">
+                                <span>Giá vé</span>
+                                <span id="subtotal">750.000đ</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Phí dịch vụ</span>
+                                <span>0đ</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Tổng cộng</span>
+                                <span id="total">750.000đ</span>
+                            </div>
+                        </div>
+
+                        <!-- Nút xác nhận đặt vé -->
+                        <button type="submit" class="booking-submit">Xác nhận đặt vé</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>CÔNG TY CỔ PHẦN TRUYỀN THÔNG Sky Travel</h3>
+                <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Văn phòng: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Điện thoại: 012 3456789 | Hotline: 1900 1234</p>
+                <p>Website: skytravel.com.vn | Email: skytravel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Góc khách hàng</h3>
+                <ul>
+                    <li>Chính sách đặt tour</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Ý kiến khách hàng</li>
+                    <li>Phiếu góp ý</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Đăng ký nhận thông tin khuyến mãi</h3>
+                <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ</p>
+            <p>Số GP/ No: 79-042/2022/TCDL – GP LHQT</p>
+            <p>Do TCDL cấp ngày 30/11/2009 – Cấp đổi ngày 06/06/2022</p>
+        </div>
+    </footer>
+
+    <!-- Dropdown ngôn ngữ -->
+    <div class="language-dropdown" id="languageDropdown">
+        <div class="language-header">Chọn ngôn ngữ</div>
+        <div class="language-columns">
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/au.png" class="language-flag">
+            <span class="language-name">English (Australia)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/in.png" class="language-flag">
+            <span class="language-name">English (India)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ph.png" class="language-flag">
+            <span class="language-name">English (Philippines)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/gb.png" class="language-flag">
+            <span class="language-name">English (UK)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/tw.png" class="language-flag">
+            <span class="language-name">繁體中文</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/th.png" class="language-flag">
+            <span class="language-name">ไทย</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+            <span class="language-name">Bahasa Malaysia</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/de.png" class="language-flag">
+            <span class="language-name">Deutsch</span>
+            </div>
+        </div>
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ca.png" class="language-flag">
+            <span class="language-name">English (Canada)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+            <span class="language-name">English (Malaysia)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/sg.png" class="language-flag">
+            <span class="language-name">English (Singapore)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/intl.png" class="language-flag">
+            <span class="language-name">English (International)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/jp.png" class="language-flag">
+            <span class="language-name">日本語</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/vn.png" class="language-flag">
+            <span class="language-name highlight">Tiếng Việt</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/fr.png" class="language-flag">
+            <span class="language-name">Français</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/it.png" class="language-flag">
+            <span class="language-name">Italiano</span>
+            </div>
+        </div>
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/hk.png" class="language-flag">
+            <span class="language-name">English (Hong Kong, SAR)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/nz.png" class="language-flag">
+            <span class="language-name">English (New Zealand)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/us.png" class="language-flag">
+            <span class="language-name">English (US)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/cn.png" class="language-flag">
+            <span class="language-name">简体中文</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/kr.png" class="language-flag">
+            <span class="language-name">한국어</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/id.png" class="language-flag">
+            <span class="language-name">Bahasa Indonesia</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/es.png" class="language-flag">
+            <span class="language-name">Español</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ru.png" class="language-flag">
+            <span class="language-name">Русский</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript xử lý các chức năng -->
+    <script>
+        const languageBtn = document.getElementById('languageBtn');
+        const languageDropdown = document.getElementById('languageDropdown');
+      
+        const currencyBtn = document.getElementById('currencyBtn');
+        const currencyDropdown = document.getElementById('currencyDropdown');
+      
+        // Toggle language dropdown
+        languageBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+      
+          const isLanguageOpen = languageDropdown.classList.contains('show');
+      
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+      
+          if (!isLanguageOpen) {
+            languageDropdown.classList.add('show');
+          }
+        });
+      
+        // Toggle currency dropdown
+        currencyBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+      
+          const isCurrencyOpen = currencyDropdown.classList.contains('show');
+      
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+      
+          if (!isCurrencyOpen) {
+            currencyDropdown.classList.add('show');
+          }
+        });
+      
+        // Đóng tất cả dropdown khi click ngoài
+        document.addEventListener('click', () => {
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+        });
+      
+        function closeLanguageDropdown() {
+          languageDropdown.classList.remove('show');
+        }
+      
+        function closeCurrencyDropdown() {
+          currencyDropdown.classList.remove('show');
+        }
+
+        // Hàm khởi tạo khi trang được tải
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy thông tin sản phẩm từ URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            const productName = urlParams.get('name');
+            const productPrice = urlParams.get('price');
+            const productOriginalPrice = urlParams.get('originalPrice');
+            const productImage = urlParams.get('image');
+
+            // Cập nhật thông tin sản phẩm trên trang
+            if (productName) document.getElementById('productName').textContent = productName;
+            if (productPrice) document.getElementById('productPrice').textContent = productPrice;
+            if (productOriginalPrice) document.getElementById('productOriginalPrice').textContent = productOriginalPrice;
+            if (productImage) document.getElementById('productImage').src = productImage;
+
+            // Cập nhật tổng tiền ban đầu
+            updateTotal();
+        });
+
+        // Hàm tăng số lượng vé
+        function increaseQuantity() {
+            const input = document.getElementById('quantity');
+            if (input.value < parseInt(input.max)) {
+                input.value = parseInt(input.value) + 1;
+                updateTotal();
+            }
+        }
+
+        // Hàm giảm số lượng vé
+        function decreaseQuantity() {
+            const input = document.getElementById('quantity');
+            if (input.value > parseInt(input.min)) {
+                input.value = parseInt(input.value) - 1;
+                updateTotal();
+            }
+        }
+
+        // Hàm cập nhật tổng tiền
+        function updateTotal() {
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const price = parseInt(document.getElementById('productPrice').textContent.replace(/[^0-9]/g, ''));
+            const subtotal = quantity * price;
+            
+            // Cập nhật hiển thị tổng tiền với định dạng số tiền Việt Nam
+            document.getElementById('subtotal').textContent = subtotal.toLocaleString('vi-VN') + 'đ';
+            document.getElementById('total').textContent = subtotal.toLocaleString('vi-VN') + 'đ';
+        }
+
+        // Xử lý sự kiện submit form
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Đặt vé thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html> 

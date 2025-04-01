@@ -1,0 +1,318 @@
+/* Popular Flights Section */
+.popular-flights {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.flights-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flights-header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.flights-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.flights-header p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+/* Flights Grid */
+.flights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.flight-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.flight-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flight-info {
+  flex: 1;
+}
+
+.route-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.city {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.arrow {
+  font-size: 16px;
+  color: #666;
+}
+
+.dates {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.price-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.airline-logo {
+  padding-top: 0px;
+  width: 80px; /* Tăng kích thước logo để to hơn */
+  height: 80px;
+  object-fit: contain;
+}
+
+.view-btn {
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #e07b00;
+}
+
+.airline-logos {
+  background-color: #f5f5f5;
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+.airline-logos h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.logos-container {
+  overflow: hidden; /* Ẩn phần logo vượt ra ngoài */
+  width: 100%;
+}
+
+.logos-track {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Tạo hiệu ứng chạy liên tục */
+}
+
+.logo-item {
+  width: 150px; /* Kích thước logo */
+  height: auto;
+  margin: 0 30px; /* Khoảng cách giữa các logo */
+}
+
+/* Hiệu ứng chạy từ trái qua phải và ngược lại */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%); /* Dịch chuyển 50% chiều dài track */
+  }
+  100% {
+    transform: translateX(0); /* Quay lại vị trí ban đầu */
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .flights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .flights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flight-card {
+    padding: 15px;
+  }
+
+  .city {
+    font-size: 14px;
+  }
+
+  .dates {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .airline-logo {
+    width: 60px; /* Giảm kích thước logo trên thiết bị nhỏ */
+    height: 60px;
+  }
+
+  .view-btn {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+}
+
+/* Flight Info Section */
+.flight-info-section {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.info-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.info-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.info-header p {
+  font-size: 16px;
+  color: #7f8c8d;
+}
+
+/* Tabs */
+.info-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #ff8c00;
+  color: #fff;
+  border-color: #ff8c00;
+}
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.info-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-item {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .info-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tab {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+}

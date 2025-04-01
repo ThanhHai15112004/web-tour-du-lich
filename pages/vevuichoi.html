@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vé Vui Chơi - Đặt vé online - iVIVU Clone</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-nav-container">
+            <div class="top-nav">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/imgs/logos/logo3.jpg" alt="Tour Logo">
+                </a>
+                <div class="search-bar">
+                    <div class="search-input-container">
+                      
+                      <input type="text" placeholder="Tìm theo điểm đến, hoạt động">
+                    </div>
+                </div>
+
+                <div class="user-options">
+                    <div class="language-button" id="languageBtn">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" class="flag-icon">
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="currency-button" id="currencyBtn">
+                        <span>VND</span>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <a href="#">Trợ giúp</a>
+                    <a href="#">Xem gần đây</a>
+                    <a href="#">Đăng ký</a>
+                    <a href="#" class="btn">Đăng nhập</a>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav-container">
+            <div class="bottom-nav">
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/about-tour.html">Giới Thiệu Về Tour</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/book-flight-tickets.html">Đặt Vé Máy Bay</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/vevuichoi.html">Đặt Vé Vui Chơi</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/datvetau.html">Đặt Vé Tàu</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/about.html">Giới Thiệu</a>
+                </div>
+              </div>
+        </div>
+
+       
+
+
+       
+        
+        <!-- Dropdown tiền tệ -->
+        <div class="currency-dropdown" id="currencyDropdown">
+            <div class="currency-section">
+            <div class="currency-header">Đơn vị tiền tệ được đề nghị</div>
+            <div class="currency-columns">
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code highlight">VND</div><div class="currency-name highlight">Việt Nam Đồng</div></div>
+                <div class="currency-item"><div class="currency-code">TWD</div><div class="currency-name">Đài Tệ</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">HKD</div><div class="currency-name">Dollar Hong Kong</div></div>
+                <div class="currency-item"><div class="currency-code">CNY</div><div class="currency-name">Nhân Dân Tệ</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">SGD</div><div class="currency-name">Dollar Singapore</div></div>
+                <div class="currency-item"><div class="currency-code">KRW</div><div class="currency-name">Won Hàn Quốc</div></div>
+                </div>
+                <div class="currency-column">
+                <div class="currency-item"><div class="currency-code">USD</div><div class="currency-name">Dollar Mỹ</div></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="currency-section">
+            <div class="currency-header">Tiền tệ khác</div>
+                <div class="currency-columns">
+                    <div class="currency-column">
+                        <div class="currency-item"><div class="currency-code">AED</div><div class="currency-name">Dirham Ả Rập thống nhất</div></div>
+                        <div class="currency-item"><div class="currency-code">DKK</div><div class="currency-name">Krone Đan Mạch</div></div>
+                        <div class="currency-item"><div class="currency-code">GBP</div><div class="currency-name">Bảng Anh</div></div>
+                        <div class="currency-item"><div class="currency-code">ISK</div><div class="currency-name">Krona Iceland</div></div>
+                        <div class="currency-item"><div class="currency-code">LAK</div><div class="currency-name">Kip Lào</div></div>
+                    </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">MUR</div><div class="currency-name">Mauritian Rupee</div></div>
+                    <div class="currency-item"><div class="currency-code">NZD</div><div class="currency-name">Dollar New Zealand</div></div>
+                    <div class="currency-item"><div class="currency-code">SEK</div><div class="currency-name">Krona Thụy Điển</div></div>
+                    <div class="currency-item"><div class="currency-code">AUD</div><div class="currency-name">Dollar Úc</div></div>
+                    <div class="currency-item"><div class="currency-code">EGP</div><div class="currency-name">Bảng Ai Cập</div></div>
+                </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">IDR</div><div class="currency-name">Rupiah Indonesia</div></div>
+                    <div class="currency-item"><div class="currency-code">JOD</div><div class="currency-name">Dinar Jordan</div></div>
+                    <div class="currency-item"><div class="currency-code">MAD</div><div class="currency-name">Ma-rốc Diraham</div></div>
+                    <div class="currency-item"><div class="currency-code">MXN</div><div class="currency-name">Peso Mexico</div></div>
+                    <div class="currency-item"><div class="currency-code">OMR</div><div class="currency-name">Rial Omani</div></div>
+                </div>
+                <div class="currency-column">
+                    <div class="currency-item"><div class="currency-code">THB</div><div class="currency-name">Bạt Thái</div></div>
+                    <div class="currency-item"><div class="currency-code">CAD</div><div class="currency-name">Đô Canada</div></div>
+                    <div class="currency-item"><div class="currency-code">EUR</div><div class="currency-name">Euro</div></div>
+                    <div class="currency-item"><div class="currency-code">ILS</div><div class="currency-name">Shekel Israeli</div></div>
+                    <div class="currency-item"><div class="currency-code">JPY</div><div class="currency-name">Yên Nhật</div></div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Vé vui chơi giá tốt nhất</h1>
+                <p class="hero-subtitle">Trải nghiệm những khoảnh khắc tuyệt vời cùng gia đình và bạn bè</p>
+                <div class="search-box">
+                    <div class="search-input">
+                        <input type="text" placeholder="Tìm kiếm vé vui chơi, công viên, trải nghiệm...">
+                    </div>
+                    <button class="search-btn">Tìm kiếm</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sale Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Vé vui chơi giảm giá</h2>
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/phuquoc.jpg" alt="VinWonders Phú Quốc">
+                        <span class="card-badge">Giảm 25%</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">VinWonders Phú Quốc</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Phú Quốc, Kiên Giang</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">750.000đ</div>
+                                <div class="price-original">1.000.000đ</div>
+                            </div>
+                            <a href="booking.html?name=VinWonders Phú Quốc&price=750.000đ&originalPrice=1.000.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/suoitien.jpg" alt="Suối Tiên">
+                        <span class="card-badge">Giảm 15%</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Suối Tiên</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> TP.HCM</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">200.000đ</div>
+                                <div class="price-original">235.000đ</div>
+                            </div>
+                            <a href="booking.html?name=Suối Tiên&price=200.000đ&originalPrice=235.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/bana.jpg" alt="Sun World Bà Nà Hills">
+                        <span class="card-badge">Giảm 30%</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sun World Bà Nà Hills</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">700.000đ</div>
+                                <div class="price-original">1.000.000đ</div>
+                            </div>
+                            <a href="booking.html?name=Sun World Bà Nà Hills&price=700.000đ&originalPrice=1.000.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/vinpealphuquoc.jpg" alt="Vinpearl Safari Phú Quốc">
+                        <span class="card-badge">Giảm 20%</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Vinpearl Safari Phú Quốc</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Phú Quốc, Kiên Giang</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">500.000đ</div>
+                                <div class="price-original">625.000đ</div>
+                            </div>
+                            <a href="booking.html?name=Vinpearl Safari Phú Quốc&price=500.000đ&originalPrice=625.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="view-all-btn">Xem tất cả</a>
+        </div>
+    </section>
+
+    <!-- Theme Parks Section -->
+    <section class="section theme-parks">
+        <div class="container">
+            <h2 class="section-title">Công viên Giải Trí</h2>
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/vinhome.jpg" alt="VinWonders Nha Trang">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">VinWonders Nha Trang</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Nha Trang, Khánh Hòa</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">800.000đ</div>
+                            </div>
+                            <a href="booking.html?name=VinWonders Nha Trang&price=800.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/damsen.jpg" alt="Đầm Sen">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Đầm Sen</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> TP.HCM</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">150.000đ</div>
+                            </div>
+                            <a href="booking.html?name=Đầm Sen&price=150.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/halong.jpg" alt="Sun World Hạ Long Park">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sun World Hạ Long Park</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Hạ Long, Quảng Ninh</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">550.000đ</div>
+                            </div>
+                            <a href="booking.html?name=Sun World Hạ Long Park&price=550.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/asia.jpg" alt="Asia Park">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Asia Park</h3>
+                        <p class="card-location"><i class="fas fa-map-marker-alt"></i> Đà Nẵng</p>
+                        <div class="card-price">
+                            <div>
+                                <div class="price-value">400.000đ</div>
+                            </div>
+                            <a href="booking.html?name=Asia Park&price=400.000đ&image=https://via.placeholder.com/300x180"
+                                class="search-btn">Đặt ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="view-all-btn">Xem tất cả</a>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Trải nghiệm kỳ nghỉ tuyệt vời</h2>
+                <p class="cta-subtitle">Đặt tour trọn gói ngay hôm nay để có những trải nghiệm tuyệt vời trong kỳ nghỉ
+                    của bạn cùng gia đình và bạn bè.</p>
+                <a href="#" class="cta-btn">Xem tour ngay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Kinh nghiệm du lịch</h2>
+            <div class="experience-grid">
+                <!-- Experience 1 -->
+                <div class="experience-card">
+                    <div class="experience-img">
+                        <img src="/images/phuquoc1.jpg" alt="Kinh nghiệm du lịch Phú Quốc">
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Kinh nghiệm du lịch Phú Quốc từ A-Z</h3>
+                        <p class="experience-text">Tất tần tật những kinh nghiệm du lịch Phú Quốc mà bạn cần biết trước
+                            khi lên đường khám phá hòn đảo thiên đường này.</p>
+                        <a href="#" class="read-more-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="experience-card">
+                    <div class="experience-img">
+                        <img src="/images/danang3.png" alt="Kinh nghiệm du lịch Đà Nẵng">
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Top 10 địa điểm không thể bỏ qua khi đến Đà Nẵng</h3>
+                        <p class="experience-text">Khám phá những địa điểm du lịch hấp dẫn nhất tại Đà Nẵng, từ Bà Nà
+                            Hills đến bán đảo Sơn Trà.</p>
+                        <a href="#" class="read-more-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="experience-card">
+                    <div class="experience-img">
+                        <img src="/images/nhatrang.jpg" alt="Kinh nghiệm du lịch Nha Trang">
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Hướng dẫn chi tiết du lịch Nha Trang tiết kiệm</h3>
+                        <p class="experience-text">Những mẹo hay giúp bạn tiết kiệm chi phí khi du lịch Nha Trang từ chỗ
+                            ở, ăn uống đến phương tiện di chuyển.</p>
+                        <a href="#" class="read-more-btn">Xem thêm <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Thêm phần Điểm đến phổ biến -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Điểm đến phổ biến</h2>
+            <div class="card-grid">
+                <!-- Điểm đến 1 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/phuquo3.jpg"Phú Quốc">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Phú Quốc</h3>
+                        <p class="card-location"><i class="fas fa-ticket-alt"></i> 25 dịch vụ</p>
+                        <a href="#" class="read-more-btn">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Điểm đến 2 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/danang2.jpg" alt="Đà Nẵng">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Đà Nẵng</h3>
+                        <p class="card-location"><i class="fas fa-ticket-alt"></i> 20 dịch vụ</p>
+                        <a href="#" class="read-more-btn">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Điểm đến 3 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/nhatrang1.jpg" alt="Nha Trang">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Nha Trang</h3>
+                        <p class="card-location"><i class="fas fa-ticket-alt"></i> 18 dịch vụ</p>
+                        <a href="#" class="read-more-btn">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Điểm đến 4 -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="/images/hcm.jpg" alt="TP.HCM">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">TP.HCM</h3>
+                        <p class="card-location"><i class="fas fa-ticket-alt"></i> 15 dịch vụ</p>
+                        <a href="#" class="read-more-btn">Xem chi tiết <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thêm phần Tại sao chọn SKYLINE -->
+    <section class="section" style="background-color: #f9f9f9;">
+        <div class="container">
+            <h2 class="section-title">Tại sao chọn SKYLINE?</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-top: 30px;">
+                <!-- Lợi ích 1 -->
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; color: #f57c00; margin-bottom: 15px;">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3 style="font-size: 18px; margin-bottom: 10px;">Giá tốt nhất</h3>
+                    <p style="color: #666; font-size: 14px;">Cam kết giá tốt nhất cho trải nghiệm của bạn</p>
+                </div>
+
+                <!-- Lợi ích 2 -->
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; color: #f57c00; margin-bottom: 15px;">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 style="font-size: 18px; margin-bottom: 10px;">Đảm bảo hoàn tiền</h3>
+                    <p style="color: #666; font-size: 14px;">Hoàn tiền 100% nếu không sử dụng dịch vụ</p>
+                </div>
+
+                <!-- Lợi ích 3 -->
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; color: #f57c00; margin-bottom: 15px;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 style="font-size: 18px; margin-bottom: 10px;">Hỗ trợ 24/7</h3>
+                    <p style="color: #666; font-size: 14px;">Đội ngũ chăm sóc khách hàng luôn sẵn sàng hỗ trợ</p>
+                </div>
+
+                <!-- Lợi ích 4 -->
+                <div style="text-align: center;">
+                    <div style="font-size: 48px; color: #f57c00; margin-bottom: 15px;">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 style="font-size: 18px; margin-bottom: 10px;">Vé điện tử</h3>
+                    <p style="color: #666; font-size: 14px;">Thanh toán nhanh chóng và nhận vé ngay qua email</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thêm phần FAQ -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Câu hỏi thường gặp</h2>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- FAQ Item 1 -->
+                <div style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="padding: 15px; background-color: #f8f8f8; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <span>Làm thế nào để đặt vé vui chơi trên SKYLINE?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div style="padding: 15px; border-top: 1px solid #eee;">
+                        <p>Bạn có thể dễ dàng đặt vé vui chơi trên SKYLINE bằng cách tìm kiếm điểm đến hoặc tên công
+                            viên,
+                            sau đó chọn ngày sử dụng và số lượng vé, thanh toán và nhận vé điện tử qua email.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="padding: 15px; background-color: #f8f8f8; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <span>Tôi có thể hoàn/hủy vé sau khi đã đặt không?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div style="padding: 15px; border-top: 1px solid #eee;">
+                        <p>Chính sách hoàn/hủy vé tùy thuộc vào từng loại vé và điểm tham quan. Vui lòng đọc kỹ điều
+                            khoản trước khi đặt vé. Đa số các vé vui chơi không được hoàn tiền sau khi đặt.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="padding: 15px; background-color: #f8f8f8; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <span>Vé điện tử sử dụng như thế nào?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div style="padding: 15px; border-top: 1px solid #eee;">
+                        <p>Sau khi đặt vé thành công, bạn sẽ nhận được vé điện tử qua email. Bạn có thể in vé ra hoặc
+                            lưu vé trong điện thoại và xuất trình khi đến điểm vui chơi.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 8px; overflow: hidden;">
+                    <div
+                        style="padding: 15px; background-color: #f8f8f8; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                        <span>Vé có giá trị trong bao lâu?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div style="padding: 15px; border-top: 1px solid #eee;">
+                        <p>Thời hạn sử dụng của vé tùy thuộc vào từng loại vé. Có vé chỉ sử dụng được trong ngày đã
+                            chọn, có vé có hiệu lực trong một khoảng thời gian nhất định. Thông tin này sẽ được hiển thị
+                            rõ khi bạn đặt vé.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#" class="view-all-btn">Xem tất cả câu hỏi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thêm phần Phương thức thanh toán -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Phương thức thanh toán</h2>
+
+            <div style="margin-top: 20px; text-align: center;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                    <img src="/images/visa.jpg" alt="Visa" style="height: 30px; width: auto; object-fit: contain;">
+                    <img src="/images/momo.webp" alt="Momo" style="height: 30px; width: auto; object-fit: contain;">
+                    <img src="/images/zalo.png" alt="ZaloPay" style="height: 30px; width: auto; object-fit: contain;">
+                    <img src="/images/vnpay.jpg" alt="VNPay" style="height: 30px; width: auto; object-fit: contain;">
+                    <img src="/images/atm.jpg" alt="ATM" style="height: 30px; width: auto; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>CÔNG TY CỔ PHẦN TRUYỀN THÔNG Sky Travel</h3>
+                <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Văn phòng: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Điện thoại: 012 3456789 | Hotline: 1900 1234</p>
+                <p>Website: skytravel.com.vn | Email: skytravel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Góc khách hàng</h3>
+                <ul>
+                    <li>Chính sách đặt tour</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Ý kiến khách hàng</li>
+                    <li>Phiếu góp ý</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Đăng ký nhận thông tin khuyến mãi</h3>
+                <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ</p>
+            <p>Số GP/ No: 79-042/2022/TCDL – GP LHQT</p>
+            <p>Do TCDL cấp ngày 30/11/2009 – Cấp đổi ngày 06/06/2022</p>
+        </div>
+    </footer>
+
+
+
+        <!-- Dropdown ngôn ngữ -->
+    <div class="language-dropdown" id="languageDropdown">
+        <div class="language-header">Chọn ngôn ngữ</div>
+        <div class="language-columns">
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/au.png" class="language-flag">
+            <span class="language-name">English (Australia)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/in.png" class="language-flag">
+            <span class="language-name">English (India)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ph.png" class="language-flag">
+            <span class="language-name">English (Philippines)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/gb.png" class="language-flag">
+            <span class="language-name">English (UK)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/tw.png" class="language-flag">
+            <span class="language-name">繁體中文</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/th.png" class="language-flag">
+            <span class="language-name">ไทย</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+            <span class="language-name">Bahasa Malaysia</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/de.png" class="language-flag">
+            <span class="language-name">Deutsch</span>
+            </div>
+        </div>
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ca.png" class="language-flag">
+            <span class="language-name">English (Canada)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+            <span class="language-name">English (Malaysia)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/sg.png" class="language-flag">
+            <span class="language-name">English (Singapore)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/intl.png" class="language-flag">
+            <span class="language-name">English (International)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/jp.png" class="language-flag">
+            <span class="language-name">日本語</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/vn.png" class="language-flag">
+            <span class="language-name highlight">Tiếng Việt</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/fr.png" class="language-flag">
+            <span class="language-name">Français</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/it.png" class="language-flag">
+            <span class="language-name">Italiano</span>
+            </div>
+        </div>
+
+        <div class="language-column">
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/hk.png" class="language-flag">
+            <span class="language-name">English (Hong Kong, SAR)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/nz.png" class="language-flag">
+            <span class="language-name">English (New Zealand)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/us.png" class="language-flag">
+            <span class="language-name">English (US)</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/cn.png" class="language-flag">
+            <span class="language-name">简体中文</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/kr.png" class="language-flag">
+            <span class="language-name">한국어</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/id.png" class="language-flag">
+            <span class="language-name">Bahasa Indonesia</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/es.png" class="language-flag">
+            <span class="language-name">Español</span>
+            </div>
+            <div class="language-item">
+            <img src="https://flagcdn.com/w40/ru.png" class="language-flag">
+            <span class="language-name">Русский</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Thêm JavaScript để tạo chức năng cơ bản -->
+    <script>
+        const languageBtn = document.getElementById('languageBtn');
+        const languageDropdown = document.getElementById('languageDropdown');
+      
+        const currencyBtn = document.getElementById('currencyBtn');
+        const currencyDropdown = document.getElementById('currencyDropdown');
+      
+        // Toggle language dropdown
+        languageBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+      
+          const isLanguageOpen = languageDropdown.classList.contains('show');
+      
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+      
+          if (!isLanguageOpen) {
+            languageDropdown.classList.add('show');
+          }
+        });
+      
+        // Toggle currency dropdown
+        currencyBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+      
+          const isCurrencyOpen = currencyDropdown.classList.contains('show');
+      
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+      
+          if (!isCurrencyOpen) {
+            currencyDropdown.classList.add('show');
+          }
+        });
+      
+        // Đóng tất cả dropdown khi click ngoài
+        document.addEventListener('click', () => {
+          closeLanguageDropdown();
+          closeCurrencyDropdown();
+        });
+      
+        function closeLanguageDropdown() {
+          languageDropdown.classList.remove('show');
+        }
+      
+        function closeCurrencyDropdown() {
+          currencyDropdown.classList.remove('show');
+        }
+
+        // Slider carousel function (placeholder)
+        document.addEventListener('DOMContentLoaded', function () {
+            // Code xử lý slider sẽ được thêm vào đây
+            console.log('Page loaded!');
+
+            // FAQ toggle functionality
+            const faqHeaders = document.querySelectorAll('[style*="cursor: pointer"]');
+
+            faqHeaders.forEach(header => {
+                header.addEventListener('click', function () {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+
+                    // Toggle display
+                    if (content.style.display === 'none') {
+                        content.style.display = 'block';
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        content.style.display = 'none';
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

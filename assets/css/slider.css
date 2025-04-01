@@ -7,7 +7,7 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: 600px; /* Giảm từ 500px để gọn hơn */
+    height: 700px; /* Giảm từ 500px để gọn hơn */
     overflow: hidden;
     background-color: #000; /* Đảm bảo không có khoảng trống nếu video không tải */
   }

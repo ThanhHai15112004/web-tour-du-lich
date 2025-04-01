@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt vé máy bay</title>
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/banner-flight.css">
+    <link rel="stylesheet" href="/assets/css/slider.css">
+    <link rel="stylesheet" href="/assets/css/main-flight.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="top-nav-container">
+            <div class="top-nav">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/imgs/logos/logo3.jpg" alt="Tour Logo">
+                </a>
+                <div class="search-bar">
+                    <div class="search-input-container">
+                        <input type="text" placeholder="Tìm theo điểm đến, hoạt động">
+                    </div>
+                </div>
+
+                <div class="user-options">
+                    <div class="language-button" id="languageBtn">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" class="flag-icon">
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="currency-button" id="currencyBtn">
+                        <span>VND</span>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <a href="#">Trợ giúp</a>
+                    <a href="#">Xem gần đây</a>
+                    <a href="#">Đăng ký</a>
+                    <a href="#" class="btn">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav-container">
+            <div class="bottom-nav">
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/about-tour.html">Giới Thiệu Về Tour</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/book-flight-tickets.html">Đặt Vé Máy Bay</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/vevuichoi.html">Đặt Vé Vui Chơi</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/datvetau.html">Đặt Vé Tàu</a>
+                </div>
+                <div class="link-wrapper">
+                  <div class="rainbow-border"></div>
+                  <a href="/pages/about.html">Giới Thiệu</a>
+                </div>
+              </div>
+        </div>
+
+        <!-- Dropdown tiền tệ -->
+        <div class="currency-dropdown" id="currencyDropdown">
+            <div class="currency-section">
+                <div class="currency-header">Đơn vị tiền tệ được đề nghị</div>
+                <div class="currency-columns">
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code highlight">VND</div>
+                            <div class="currency-name highlight">Việt Nam Đồng</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">TWD</div>
+                            <div class="currency-name">Đài Tệ</div>
+                        </div>
+                    </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">HKD</div>
+                            <div class="currency-name">Dollar Hong Kong</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">CNY</div>
+                            <div class="currency-name">Nhân Dân Tệ</div>
+                        </div>
+                    </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">SGD</div>
+                            <div class="currency-name">Dollar Singapore</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">KRW</div>
+                            <div class="currency-name">Won Hàn Quốc</div>
+                        </div>
+                    </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">USD</div>
+                            <div class="currency-name">Dollar Mỹ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="currency-section">
+                <div class="currency-header">Tiền tệ khác</div>
+                <div class="currency-columns">
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">AED</div>
+                            <div class="currency-name">Dirham Ả Rập thống nhất</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">DKK</div>
+                            <div class="currency-name">Krone Đan Mạch</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">GBP</div>
+                            <div class="currency-name">Bảng Anh</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">ISK</div>
+                            <div class="currency-name">Krona Iceland</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">LAK</div>
+                            <div class="currency-name">Kip Lào</div>
+                        </div>
+                    </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">MUR</div>
+                            <div class="currency-name">Mauritian Rupee</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">NZD</div>
+                            <div class="currency-name">Dollar New Zealand</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">SEK</div>
+                            <div class="currency-name">Krona Thụy Điển</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">AUD</div>
+                            <div class="currency-name">Dollar Úc</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">EGP</div>
+                            <div class="currency-name">Bảng Ai Cập</div>
+                        </div>
+                    </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">IDR</div>
+                            <div class="currency-name">Rupiah Indonesia</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">JOD</div>
+                            <div class="currency-name">Dinar Jordan</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">MAD</div>
+                            <div class="currency-name">Ma-rốc Diraham</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">MXN</div>
+                            <div class="currency-name">Peso Mexico</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">OMR</div>
+                            <div class="currency-name">Rial Omani</div>
+                        </div>
+                    </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">THB</div>
+                            <div class="currency-name">Bạt Thái</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">CAD</div>
+                            <div class="currency-name">Đô Canada</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">EUR</div>
+                            <div class="currency-name">Euro</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">ILS</div>
+                            <div class="currency-name">Shekel Israeli</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">JPY</div>
+                            <div class="currency-name">Yên Nhật</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Banner -->
+    <div class="banner container">
+        <video autoplay muted loop>
+            <source src="/assets/video/intro.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+        </video>
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <div class="booking-container">
+                <div class="header-container">
+                    <div class="header-box">
+                        <h2>Đặt vé máy bay online</h2>
+                        <p>Nhanh chóng, tiện lợi, giá tốt nhất!</p>
+                    </div>
+                    <div class="info-box">⚡ 500+ khách đặt vé trong 24 giờ qua</div>
+                </div>
+
+                <div class="ticket-form">
+                    <div class="trip-type">
+                        <label><input type="radio" name="trip" checked> Một chiều</label>
+                        <label><input type="radio" name="trip"> Khứ hồi</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nơi đi</label>
+                            <select>
+                                <option>Chọn nơi đi</option>
+                                <option>Hồ Chí Minh (SGN)</option>
+                                <option>Hà Nội (HAN)</option>
+                                <option>Đà Nẵng (DAD)</option>
+                                <option>Phú Quốc (PQC)</option>
+                            </select>
+                        </div>
+                        <div class="swap-icon">⇄</div>
+                        <div class="form-group">
+                            <label>Nơi đến</label>
+                            <select>
+                                <option>Chọn nơi đến</option>
+                                <option>Hà Nội (HAN)</option>
+                                <option>Đà Nẵng (DAD)</option>
+                                <option>Phú Quốc (PQC)</option>
+                                <option>Bangkok (BKK)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ngày đi</label>
+                            <input type="date">
+                        </div>
+                        <div class="form-group">
+                            <label>Ngày về (Khứ hồi)</label>
+                            <input type="date" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Hành khách</label>
+                            <select>
+                                <option>1 người lớn</option>
+                                <option>2 người lớn</option>
+                                <option>3 người lớn</option>
+                                <option>4 người lớn</option>
+                            </select>
+                        </div>
+                        <button class="search-btn">Tìm chuyến bay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thanh đánh giá -->
+    <div class="rating-section">
+        <div class="rating-box">
+            <img src="/assets/imgs/icon/icon1.svg" alt="Tours">
+            <div class="text">
+                <p>1.000+ chuyến bay</p>
+                <span>Đến các điểm đến trong và ngoài nước</span>
+            </div>
+        </div>
+        <div class="rating-box">
+            <img src="/assets/imgs/icon/icon2.svg" alt="Reviews">
+            <div class="text">
+                <p>15K+ đánh giá 5 sao</p>
+                <span>Từ những khách hàng đã đặt vé</span>
+            </div>
+        </div>
+        <div class="rating-box">
+            <img src="/assets/imgs/icon/icon3.svg" alt="Discount">
+            <div class="text">
+                <p>200+ ưu đãi mỗi ngày</p>
+                <span>Cho khách đặt sớm, theo nhóm, phút chót</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-flights">
+        <div class="flights-container">
+            <div class="flights-header">
+                <h2>Các chuyến bay phổ biến</h2>
+                <p>Khám phá những hành trình được yêu thích nhất và đặt vé ngay với giá ưu đãi!</p>
+            </div>
+
+            <div class="flights-grid">
+                <!-- Card 1 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hồ Chí Minh</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Perth</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Vietjet.png" alt="Vietjet" class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>11 thg 06</span> - <span>19 thg 06</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">7.408.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hà Nội</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Moscow</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Aeroflot.png" alt="Aeroflot" class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>19 thg 05</span> - <span>04 thg 06</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">14.885.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hồ Chí Minh</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Auckland</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Jetstar.png" alt="Jetstar" class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>02 thg 09</span> - <span>18 thg 09</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">15.435.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hồ Chí Minh</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Paris</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Vietnam-Airlines.png" alt="Vietnam Airlines"
+                                class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>17 thg 05</span> - <span>22 thg 05</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">15.443.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hà Nội</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Budapest</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Air-China.png" alt="Air China" class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>05 thg 06</span> - <span>15 thg 06</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">15.493.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hồ Chí Minh</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Vienna</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Air-China.png" alt="Air China" class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>11 thg 06</span> - <span>12 thg 06</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">15.630.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hà Nội</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Amsterdam</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Vietnam-Airlines.png" alt="Vietnam Airlines"
+                                class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>24 thg 05</span> - <span>31 thg 05</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">15.819.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hồ Chí Minh</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Istanbul</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Turkish-Airlines.png" alt="Turkish Airlines"
+                                class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>23 thg 08</span> - <span>28 thg 08</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">16.770.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="flight-card">
+                    <div class="flight-info">
+                        <div class="route-logo-container">
+                            <div class="route">
+                                <span class="city">Hồ Chí Minh</span>
+                                <span class="arrow">↔</span>
+                                <span class="city">Istanbul</span>
+                            </div>
+                            <img src="../assets/imgs/logos/Turkish-Airlines.png" alt=" Turkish Airlines"
+                                class="airline-logo">
+                        </div>
+                        <div class="dates">
+                            <span>23 thg 08</span> - <span>28 thg 08</span>
+                        </div>
+                        <div class="price-btn-container">
+                            <div class="price">16.770.000 VND</div>
+                            <a href="#" class="view-btn">Xem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="airline-logos">
+        <h3>Các hãng máy bay</h3>
+        <div class="logos-container">
+            <!-- Lặp lại các logo để tạo hiệu ứng liên tục -->
+            <div class="logos-track">
+                <img src="../assets/imgs/logos/Aeroflot.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Air-China.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/bamboo-airways.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/British-Airways.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Emirates.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Japan-Airlines.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Korean-Air.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Qantas.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Singapore-Airlines.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Thai-Airways.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Turkish-Airlines.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Vietjet.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Vietnam-Airlines.png" alt="Vietjet" class="logo-item">
+                <!-- Lặp lại để tạo hiệu ứng mượt mà -->
+                <img src="../assets/imgs/logos/Aeroflot.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Air-China.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/bamboo-airways.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/British-Airways.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Emirates.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Japan-Airlines.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Korean-Air.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Qantas.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Singapore-Airlines.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Thai-Airways.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Turkish-Airlines.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Vietjet.png" alt="Vietjet" class="logo-item">
+                <img src="../assets/imgs/logos/Vietnam-Airlines.png" alt="Vietjet" class="logo-item">
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-flights">
+        <div class="flights-container">
+            <div class="flights-header">
+                <h2>Các chuyến bay trong nước</h2>
+                <p>Khám phá các điểm đến phổ biến trong nước với giá ưu đãi!</p>
+            </div>
+            <div class="flights-grid" id="domestic-flights"></div>
+        </div>
+    </div>
+
+    <div class="popular-flights">
+        <div class="flights-container">
+            <div class="flights-header">
+                <h2>Các chuyến bay quốc tế</h2>
+                <p>Bay đến các thành phố nổi tiếng thế giới với giá tốt nhất!</p>
+            </div>
+            <div class="flights-grid" id="international-flights"></div>
+        </div>
+    </div>
+
+
+    <!-- Thông tin hữu ích -->
+    <div class="flight-info-section">
+        <div class="info-container">
+            <div class="info-header">
+                <h2>Thông tin hữu ích khi đi máy bay</h2>
+                <p>Có một hành trình hơn cả mong đợi</p>
+            </div>
+            <div class="info-tabs">
+                <button class="tab active" onclick="showTab('tab1')">Thứ tự</button>
+                <button class="tab" onclick="showTab('tab2')">Giấy tờ & Hành lý</button>
+                <button class="tab" onclick="showTab('tab3')">Lưu ý</button>
+            </div>
+            <div class="info-content">
+                <!-- Tab 1: Thứ tự -->
+                <div id="tab1" class="tab-content active">
+                    <div class="info-grid">
+                        <div class="info-item">Tới phi trường sân bay trước mấy tiếng?</div>
+                        <div class="info-item">Check in online nếu thì có cần tới quầy không?</div>
+                        <div class="info-item">Trẻ em có được phép bay một mình không?</div>
+                    </div>
+                </div>
+                <!-- Tab 2: Giấy tờ & Hành lý -->
+                <div id="tab2" class="tab-content">
+                    <div class="info-grid">
+                        <div class="info-item">Bay chuyến nội địa Việt Nam cần mang những loại giấy tờ gì?</div>
+                        <div class="info-item">Tới bị mất CCCD thì có được bay không?</div>
+                        <div class="info-item">Tới được mang theo bao nhiêu kg hành lý?</div>
+                        <div class="info-item">Đồ dùng cá nhân nào được mang lên máy bay?</div>
+                    </div>
+                </div>
+                <!-- Tab 3: Lưu ý -->
+                <div id="tab3" class="tab-content">
+                    <div class="info-grid">
+                        <div class="info-item">Em bé (trẻ sơ sinh) bao nhiêu tuổi thì được đi máy bay?</div>
+                        <div class="info-item">Tới số tới phải tắt điện thoại trên máy bay?</div>
+                        <div class="info-item">Phụ nữ mang thai đi máy bay cần lưu ý gì?</div>
+                        <div class="info-item">Vé khứ hồi, không bay chiều đi thì chiều về có được không?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>CÔNG TY CỔ PHẦN TRUYỀN THÔNG Sky Travel</h3>
+                <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Văn phòng: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                <p>Điện thoại: 012 3456789 | Hotline: 1900 1234</p>
+                <p>Website: skytravel.com.vn | Email: skytravel@gmail.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Góc khách hàng</h3>
+                <ul>
+                    <li>Chính sách đặt tour</li>
+                    <li>Chính sách bảo mật</li>
+                    <li>Ý kiến khách hàng</li>
+                    <li>Phiếu góp ý</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Đăng ký nhận thông tin khuyến mãi</h3>
+                <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email của bạn" required>
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ</p>
+            <p>Số GP/ No: 79-042/2022/TCDL – GP LHQT</p>
+            <p>Do TCDL cấp ngày 30/11/2009 – Cấp đổi ngày 06/06/2022</p>
+        </div>
+    </footer>
+
+    <!-- Dropdown ngôn ngữ -->
+    <div class="language-dropdown" id="languageDropdown">
+        <div class="language-header">Chọn ngôn ngữ</div>
+        <div class="language-columns">
+            <div class="language-column">
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/au.png" class="language-flag">
+                    <span class="language-name">English (Australia)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/in.png" class="language-flag">
+                    <span class="language-name">English (India)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/ph.png" class="language-flag">
+                    <span class="language-name">English (Philippines)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/gb.png" class="language-flag">
+                    <span class="language-name">English (UK)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/tw.png" class="language-flag">
+                    <span class="language-name">繁體中文</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/th.png" class="language-flag">
+                    <span class="language-name">ไทย</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+                    <span class="language-name">Bahasa Malaysia</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/de.png" class="language-flag">
+                    <span class="language-name">Deutsch</span>
+                </div>
+            </div>
+
+            <div class="language-column">
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/ca.png" class="language-flag">
+                    <span class="language-name">English (Canada)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+                    <span class="language-name">English (Malaysia)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/sg.png" class="language-flag">
+                    <span class="language-name">English (Singapore)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/intl.png" class="language-flag">
+                    <span class="language-name">English (International)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/jp.png" class="language-flag">
+                    <span class="language-name">日本語</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/vn.png" class="language-flag">
+                    <span class="language-name highlight">Tiếng Việt</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/fr.png" class="language-flag">
+                    <span class="language-name">Français</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/it.png" class="language-flag">
+                    <span class="language-name">Italiano</span>
+                </div>
+            </div>
+
+            <div class="language-column">
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/hk.png" class="language-flag">
+                    <span class="language-name">English (Hong Kong, SAR)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/nz.png" class="language-flag">
+                    <span class="language-name">English (New Zealand)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/us.png" class="language-flag">
+                    <span class="language-name">English (US)</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/cn.png" class="language-flag">
+                    <span class="language-name">简体中文</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/kr.png" class="language-flag">
+                    <span class="language-name">한국어</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/id.png" class="language-flag">
+                    <span class="language-name">Bahasa Indonesia</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/es.png" class="language-flag">
+                    <span class="language-name">Español</span>
+                </div>
+                <div class="language-item">
+                    <img src="https://flagcdn.com/w40/ru.png" class="language-flag">
+                    <span class="language-name">Русский</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const languageBtn = document.getElementById('languageBtn');
+        const languageDropdown = document.getElementById('languageDropdown');
+
+        const currencyBtn = document.getElementById('currencyBtn');
+        const currencyDropdown = document.getElementById('currencyDropdown');
+
+        // Toggle language dropdown
+        languageBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isLanguageOpen = languageDropdown.classList.contains('show');
+            closeLanguageDropdown();
+            closeCurrencyDropdown();
+            if (!isLanguageOpen) {
+                languageDropdown.classList.add('show');
+            }
+        });
+
+        // Toggle currency dropdown
+        currencyBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isCurrencyOpen = currencyDropdown.classList.contains('show');
+            closeLanguageDropdown();
+            closeCurrencyDropdown();
+            if (!isCurrencyOpen) {
+                currencyDropdown.classList.add('show');
+            }
+        });
+
+        // Đóng tất cả dropdown khi click ngoài
+        document.addEventListener('click', () => {
+            closeLanguageDropdown();
+            closeCurrencyDropdown();
+        });
+
+        function closeLanguageDropdown() {
+            languageDropdown.classList.remove('show');
+        }
+
+        function closeCurrencyDropdown() {
+            currencyDropdown.classList.remove('show');
+        }
+
+        function showTab(tabId) {
+            // Ẩn tất cả các tab content
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Xóa class active khỏi tất cả các tab
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Hiển thị tab được chọn
+            document.getElementById(tabId).classList.add('active');
+            // Thêm class active cho tab được nhấp
+            event.target.classList.add('active');
+        }
+    </script>
+
+    <script src="../assets/scripts/book-flight.js"></script>
+</body>
+
+</html>
