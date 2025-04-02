@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu -  Skyline Travel</title>
+    <title>Giới thiệu - SKYLINE</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
@@ -12,457 +12,545 @@
 </head>
 
 <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="top-nav-container">
-                <div class="top-nav">
-                    <a href="/index.html" class="logo">
-                        <img src="/assets/imgs/logos/logo3.jpg" alt="Tour Logo">
-                    </a>
-                    <div class="search-bar">
-                        <div class="search-input-container">
-                        
+    <!-- Header -->
+    <header class="header">
+        <div class="top-nav-container">
+            <div class="top-nav">
+                <a href="/index.html" class="logo">
+                    <img src="/assets/imgs/logos/logo3.jpg" alt="Tour Logo">
+                </a>
+                <div class="search-bar">
+                    <div class="search-input-container">
+
                         <input type="text" placeholder="Tìm theo điểm đến, hoạt động">
-                        </div>
-                    </div>
-
-                    <div class="user-options">
-                        <div class="language-button" id="languageBtn">
-                            <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" class="flag-icon">
-                            <div class="arrow-down"></div>
-                        </div>
-
-                        <div class="currency-button" id="currencyBtn">
-                            <span>VND</span>
-                            <div class="arrow-down"></div>
-                        </div>
-
-                        <a href="#">Trợ giúp</a>
-                        <a href="#">Xem gần đây</a>
-                        <a href="#">Đăng ký</a>
-                        <a href="#" class="btn">Đăng nhập</a>
-                    
                     </div>
                 </div>
+
+                <div class="user-options">
+                    <div class="language-button" id="languageBtn">
+                        <img src="https://flagcdn.com/w40/vn.png" alt="Vietnam Flag" class="flag-icon">
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="currency-button" id="currencyBtn">
+                        <span>VND</span>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <a href="#">Trợ giúp</a>
+                    <a href="#">Xem gần đây</a>
+                    <a href="/pages/login-signup.html">Đăng ký</a>
+                    <a href="/pages/login-signup.html" class="btn">Đăng nhập</a>
+
+                </div>
             </div>
+        </div>
 
-            <div class="bottom-nav-container">
-                <div class="bottom-nav">
-                    <div class="link-wrapper">
-                      <div class="rainbow-border"></div>
-                      <a href="/pages/about-tour.html">Giới Thiệu Tour</a>
-                    </div>
-                    <div class="link-wrapper">
-                      <div class="rainbow-border"></div>
-                      <a href="/pages/book-flight-tickets.html">Đặt Vé Máy Bay</a>
-                    </div>
-                    <div class="link-wrapper">
-                      <div class="rainbow-border"></div>
-                      <a href="/pages/vevuichoi.html">Đặt Vé Vui Chơi</a>
-                    </div>
-                    <div class="link-wrapper">
-                      <div class="rainbow-border"></div>
-                      <a href="/pages/datvetau.html">Đặt Vé Tàu</a>
-                    </div>
-                    <div class="link-wrapper">
-                      <div class="rainbow-border"></div>
-                      <a href="/pages/about.html">Giới Thiệu</a>
-                    </div>
-                  </div>
+        <div class="bottom-nav-container">
+            <div class="bottom-nav">
+                <div class="link-wrapper">
+                    <div class="rainbow-border"></div>
+                    <a href="/pages/about-tour.html">Giới Thiệu Tour</a>
+                </div>
+                <div class="link-wrapper">
+                    <div class="rainbow-border"></div>
+                    <a href="/pages/book-flight-tickets.html">Đặt Vé Máy Bay</a>
+                </div>
+                <div class="link-wrapper">
+                    <div class="rainbow-border"></div>
+                    <a href="/pages/datvetau.html">Đặt Vé Tàu</a>
+                </div>
+
+                <div class="link-wrapper">
+                    <div class="rainbow-border"></div>
+                    <a href="/pages/vevuichoi.html">Đặt Vé Vui Chơi</a>
+                </div>
+                
+                <div class="link-wrapper">
+                    <div class="rainbow-border"></div>
+                    <a href="/pages/about.html">Giới Thiệu</a>
+                </div>
             </div>
+        </div>
 
-        
 
 
-        
-            
-            <!-- Dropdown tiền tệ -->
-            <div class="currency-dropdown" id="currencyDropdown">
-                <div class="currency-section">
+
+
+
+        <!-- Dropdown tiền tệ -->
+        <div class="currency-dropdown" id="currencyDropdown">
+            <div class="currency-section">
                 <div class="currency-header">Đơn vị tiền tệ được đề nghị</div>
                 <div class="currency-columns">
                     <div class="currency-column">
-                    <div class="currency-item"><div class="currency-code highlight">VND</div><div class="currency-name highlight">Việt Nam Đồng</div></div>
-                    <div class="currency-item"><div class="currency-code">TWD</div><div class="currency-name">Đài Tệ</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code highlight">VND</div>
+                            <div class="currency-name highlight">Việt Nam Đồng</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">TWD</div>
+                            <div class="currency-name">Đài Tệ</div>
+                        </div>
                     </div>
                     <div class="currency-column">
-                    <div class="currency-item"><div class="currency-code">HKD</div><div class="currency-name">Dollar Hong Kong</div></div>
-                    <div class="currency-item"><div class="currency-code">CNY</div><div class="currency-name">Nhân Dân Tệ</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code">HKD</div>
+                            <div class="currency-name">Dollar Hong Kong</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">CNY</div>
+                            <div class="currency-name">Nhân Dân Tệ</div>
+                        </div>
                     </div>
                     <div class="currency-column">
-                    <div class="currency-item"><div class="currency-code">SGD</div><div class="currency-name">Dollar Singapore</div></div>
-                    <div class="currency-item"><div class="currency-code">KRW</div><div class="currency-name">Won Hàn Quốc</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code">SGD</div>
+                            <div class="currency-name">Dollar Singapore</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">KRW</div>
+                            <div class="currency-name">Won Hàn Quốc</div>
+                        </div>
                     </div>
                     <div class="currency-column">
-                    <div class="currency-item"><div class="currency-code">USD</div><div class="currency-name">Dollar Mỹ</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code">USD</div>
+                            <div class="currency-name">Dollar Mỹ</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="currency-section">
                 <div class="currency-header">Tiền tệ khác</div>
-                    <div class="currency-columns">
-                        <div class="currency-column">
-                            <div class="currency-item"><div class="currency-code">AED</div><div class="currency-name">Dirham Ả Rập thống nhất</div></div>
-                            <div class="currency-item"><div class="currency-code">DKK</div><div class="currency-name">Krone Đan Mạch</div></div>
-                            <div class="currency-item"><div class="currency-code">GBP</div><div class="currency-name">Bảng Anh</div></div>
-                            <div class="currency-item"><div class="currency-code">ISK</div><div class="currency-name">Krona Iceland</div></div>
-                            <div class="currency-item"><div class="currency-code">LAK</div><div class="currency-name">Kip Lào</div></div>
+                <div class="currency-columns">
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">AED</div>
+                            <div class="currency-name">Dirham Ả Rập thống nhất</div>
                         </div>
-                    <div class="currency-column">
-                        <div class="currency-item"><div class="currency-code">MUR</div><div class="currency-name">Mauritian Rupee</div></div>
-                        <div class="currency-item"><div class="currency-code">NZD</div><div class="currency-name">Dollar New Zealand</div></div>
-                        <div class="currency-item"><div class="currency-code">SEK</div><div class="currency-name">Krona Thụy Điển</div></div>
-                        <div class="currency-item"><div class="currency-code">AUD</div><div class="currency-name">Dollar Úc</div></div>
-                        <div class="currency-item"><div class="currency-code">EGP</div><div class="currency-name">Bảng Ai Cập</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code">DKK</div>
+                            <div class="currency-name">Krone Đan Mạch</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">GBP</div>
+                            <div class="currency-name">Bảng Anh</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">ISK</div>
+                            <div class="currency-name">Krona Iceland</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">LAK</div>
+                            <div class="currency-name">Kip Lào</div>
+                        </div>
                     </div>
                     <div class="currency-column">
-                        <div class="currency-item"><div class="currency-code">IDR</div><div class="currency-name">Rupiah Indonesia</div></div>
-                        <div class="currency-item"><div class="currency-code">JOD</div><div class="currency-name">Dinar Jordan</div></div>
-                        <div class="currency-item"><div class="currency-code">MAD</div><div class="currency-name">Ma-rốc Diraham</div></div>
-                        <div class="currency-item"><div class="currency-code">MXN</div><div class="currency-name">Peso Mexico</div></div>
-                        <div class="currency-item"><div class="currency-code">OMR</div><div class="currency-name">Rial Omani</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code">MUR</div>
+                            <div class="currency-name">Mauritian Rupee</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">NZD</div>
+                            <div class="currency-name">Dollar New Zealand</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">SEK</div>
+                            <div class="currency-name">Krona Thụy Điển</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">AUD</div>
+                            <div class="currency-name">Dollar Úc</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">EGP</div>
+                            <div class="currency-name">Bảng Ai Cập</div>
+                        </div>
                     </div>
                     <div class="currency-column">
-                        <div class="currency-item"><div class="currency-code">THB</div><div class="currency-name">Bạt Thái</div></div>
-                        <div class="currency-item"><div class="currency-code">CAD</div><div class="currency-name">Đô Canada</div></div>
-                        <div class="currency-item"><div class="currency-code">EUR</div><div class="currency-name">Euro</div></div>
-                        <div class="currency-item"><div class="currency-code">ILS</div><div class="currency-name">Shekel Israeli</div></div>
-                        <div class="currency-item"><div class="currency-code">JPY</div><div class="currency-name">Yên Nhật</div></div>
+                        <div class="currency-item">
+                            <div class="currency-code">IDR</div>
+                            <div class="currency-name">Rupiah Indonesia</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">JOD</div>
+                            <div class="currency-name">Dinar Jordan</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">MAD</div>
+                            <div class="currency-name">Ma-rốc Diraham</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">MXN</div>
+                            <div class="currency-name">Peso Mexico</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">OMR</div>
+                            <div class="currency-name">Rial Omani</div>
+                        </div>
                     </div>
+                    <div class="currency-column">
+                        <div class="currency-item">
+                            <div class="currency-code">THB</div>
+                            <div class="currency-name">Bạt Thái</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">CAD</div>
+                            <div class="currency-name">Đô Canada</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">EUR</div>
+                            <div class="currency-name">Euro</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">ILS</div>
+                            <div class="currency-name">Shekel Israeli</div>
+                        </div>
+                        <div class="currency-item">
+                            <div class="currency-code">JPY</div>
+                            <div class="currency-name">Yên Nhật</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>    
-    </div>
+        </div>
 
         <!-- About Section with Sidebar -->
-    <div class="about-container">
-        <div class="container">
-            <div class="about-wrapper">
-                <!-- Sidebar -->
-                <div class="sidebar">
-                    <h3 class="sidebar-title">Về Skyline Travel</h3>
-                    <ul class="sidebar-menu">
-                        <li class="active"><a href="/index.html">Trang Chủ</a></li>  
-                        <li class="active"><a href="#gioi-thieu">Giới thiệu chung</a></li>
-                        <li><a href="#tam-nhin">Tầm nhìn & Sứ mệnh</a></li>
-                        <li><a href="#gia-tri">Giá trị cốt lõi</a></li>
-                        <li><a href="#thanh-tuu">Thành tựu</a></li>
-                    </ul>
+        <div class="about-container">
+            <div class="container">
+                <div class="about-wrapper">
+                    <!-- Sidebar -->
+                    <div class="sidebar">
+                        <h3 class="sidebar-title">Về Sky Travel</h3>
+                        <ul class="sidebar-menu">
+                            <li class="active"><a href="/index.html">Trang Chủ</a></li>
+                            <li class="active"><a href="#gioi-thieu">Giới thiệu chung</a></li>
+                            <li><a href="#tam-nhin">Tầm nhìn & Sứ mệnh</a></li>
+                            <li><a href="#gia-tri">Giá trị cốt lõi</a></li>
+                            <li><a href="#thanh-tuu">Thành tựu</a></li>
+                        </ul>
 
-                    <div class="sidebar-contact">
-                        <h3>Liên hệ với chúng tôi</h3>
-                        <p><i class="fas fa-map-marker-alt"></i> 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh</p>
-                        <p><i class="fas fa-phone"></i> 1900 1870</p>
-                        <p><i class="fas fa-envelope"></i> info@skyline.com</p>
+                        <div class="sidebar-contact">
+                            <h3>Liên hệ với chúng tôi</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí
+                                Minh</p>
+                            <p><i class="fas fa-phone"></i> 1900 1870</p>
+                            <p><i class="fas fa-envelope"></i> info@skyline.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div class="about-main-content">
+                        <section id="gioi-thieu" class="about-section">
+                            <h1 class="about-title">Giới thiệu về Sky Travel</h1>
+                            <div class="about-content">
+                                <div class="about-image">
+                                    <img src="../images/OIP.jpg" alt="SKYLINE Office">
+                                </div>
+                                <div class="about-text">
+                                    <p>SKYLINE được thành lập vào năm 2023, là một trong những công ty du lịch trực
+                                        tuyến
+                                        hàng đầu tại Việt Nam. Chúng tôi tự hào mang đến cho khách hàng những trải
+                                        nghiệm du
+                                        lịch tuyệt vời với dịch vụ chất lượng cao và giá cả cạnh tranh.</p>
+                                    <p>Với đội ngũ nhân viên chuyên nghiệp và nhiệt tình, chúng tôi cam kết mang đến cho
+                                        khách hàng những dịch vụ tốt nhất bao gồm:</p>
+                                    <ul class="service-list">
+                                        <li>Đặt phòng khách sạn trực tuyến</li>
+                                        <li>Tour du lịch trong nước và quốc tế</li>
+                                        <li>Combo du lịch tiết kiệm</li>
+                                        <li>Vé máy bay giá rẻ</li>
+                                        <li>Dịch vụ đưa đón sân bay</li>
+                                        <li>Cho thuê xe du lịch</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="tam-nhin" class="about-section">
+                            <h2>Tầm nhìn & Sứ mệnh</h2>
+                            <div class="vision-mission">
+                                <div class="vision">
+                                    <h3><i class="fas fa-eye"></i> Tầm nhìn</h3>
+                                    <p>Trở thành công ty du lịch trực tuyến hàng đầu Việt Nam, mang đến những trải
+                                        nghiệm du
+                                        lịch tuyệt vời và đáng nhớ cho mọi khách hàng.</p>
+                                </div>
+                                <div class="mission">
+                                    <h3><i class="fas fa-bullseye"></i> Sứ mệnh</h3>
+                                    <p>Không ngừng đổi mới và phát triển để mang đến cho khách hàng những dịch vụ du
+                                        lịch
+                                        chất lượng cao với giá cả hợp lý nhất.</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="gia-tri" class="about-section">
+                            <h2>Giá trị cốt lõi</h2>
+                            <div class="core-values">
+                                <div class="value-item">
+                                    <i class="fas fa-heart"></i>
+                                    <h3>Tận tâm</h3>
+                                    <p>Luôn đặt lợi ích và sự hài lòng của khách hàng lên hàng đầu</p>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <h3>Uy tín</h3>
+                                    <p>Cam kết chất lượng dịch vụ và giá cả cạnh tranh</p>
+                                </div>
+                                <div class="value-item">
+                                    <i class="fas fa-sync"></i>
+                                    <h3>Đổi mới</h3>
+                                    <p>Liên tục cập nhật và áp dụng công nghệ mới</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="thanh-tuu" class="about-section">
+                            <h2>Thành tựu của chúng tôi</h2>
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">100,000+</div>
+                                    <div class="stat-label">Khách hàng tin tưởng</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">1,000+</div>
+                                    <div class="stat-label">Đối tác khách sạn</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Tour du lịch</div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>CÔNG TY CỔ PHẦN TRUYỀN THÔNG Sky Travel</h3>
+                    <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                    <p>Văn phòng: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
+                    <p>Điện thoại: 012 3456789 | Hotline: 1900 1234</p>
+                    <p>Website: skytravel.com.vn | Email: skytravel@gmail.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Góc khách hàng</h3>
+                    <ul>
+                        <li>Chính sách đặt tour</li>
+                        <li>Chính sách bảo mật</li>
+                        <li>Ý kiến khách hàng</li>
+                        <li>Phiếu góp ý</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Đăng ký nhận thông tin khuyến mãi</h3>
+                    <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email của bạn" required>
+                        <button type="submit">Gửi</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ</p>
+                <p>Số GP/ No: 79-042/2022/TCDL – GP LHQT</p>
+                <p>Do TCDL cấp ngày 30/11/2009 – Cấp đổi ngày 06/06/2022</p>
+            </div>
+        </footer>
+
+
+        <!-- Dropdown ngôn ngữ -->
+        <div class="language-dropdown" id="languageDropdown">
+            <div class="language-header">Chọn ngôn ngữ</div>
+            <div class="language-columns">
+
+                <div class="language-column">
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/au.png" class="language-flag">
+                        <span class="language-name">English (Australia)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/in.png" class="language-flag">
+                        <span class="language-name">English (India)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/ph.png" class="language-flag">
+                        <span class="language-name">English (Philippines)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/gb.png" class="language-flag">
+                        <span class="language-name">English (UK)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/tw.png" class="language-flag">
+                        <span class="language-name">繁體中文</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/th.png" class="language-flag">
+                        <span class="language-name">ไทย</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+                        <span class="language-name">Bahasa Malaysia</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/de.png" class="language-flag">
+                        <span class="language-name">Deutsch</span>
                     </div>
                 </div>
 
-                <!-- Main Content -->
-                <div class="about-main-content">
-                    <section id="gioi-thieu" class="about-section">
-                        <h1 class="about-title">Giới thiệu về  Skyline Travel</h1>
-                        <div class="about-content">
-                            <div class="about-image">
-                                <img src="../images/OIP.jpg" alt="SKYLINE Office">
-                            </div>
-                            <div class="about-text">
-                                <p> Skyline Travel được thành lập vào năm 2023, là một trong những công ty du lịch trực tuyến
-                                    hàng đầu tại Việt Nam. Chúng tôi tự hào mang đến cho khách hàng những trải nghiệm du
-                                    lịch tuyệt vời với dịch vụ chất lượng cao và giá cả cạnh tranh.</p>
-                                <p>Với đội ngũ nhân viên chuyên nghiệp và nhiệt tình, chúng tôi cam kết mang đến cho
-                                    khách hàng những dịch vụ tốt nhất bao gồm:</p>
-                                <ul class="service-list">
-                                    <li>Đặt phòng khách sạn trực tuyến</li>
-                                    <li>Tour du lịch trong nước và quốc tế</li>
-                                    <li>Combo du lịch tiết kiệm</li>
-                                    <li>Vé máy bay giá rẻ</li>
-                                    <li>Dịch vụ đưa đón sân bay</li>
-                                    <li>Cho thuê xe du lịch</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
+                <div class="language-column">
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/ca.png" class="language-flag">
+                        <span class="language-name">English (Canada)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/my.png" class="language-flag">
+                        <span class="language-name">English (Malaysia)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/sg.png" class="language-flag">
+                        <span class="language-name">English (Singapore)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/intl.png" class="language-flag">
+                        <span class="language-name">English (International)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/jp.png" class="language-flag">
+                        <span class="language-name">日本語</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/vn.png" class="language-flag">
+                        <span class="language-name highlight">Tiếng Việt</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/fr.png" class="language-flag">
+                        <span class="language-name">Français</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/it.png" class="language-flag">
+                        <span class="language-name">Italiano</span>
+                    </div>
+                </div>
 
-                    <section id="tam-nhin" class="about-section">
-                        <h2>Tầm nhìn & Sứ mệnh</h2>
-                        <div class="vision-mission">
-                            <div class="vision">
-                                <h3><i class="fas fa-eye"></i> Tầm nhìn</h3>
-                                <p>Trở thành công ty du lịch trực tuyến hàng đầu Việt Nam, mang đến những trải nghiệm du
-                                    lịch tuyệt vời và đáng nhớ cho mọi khách hàng.</p>
-                            </div>
-                            <div class="mission">
-                                <h3><i class="fas fa-bullseye"></i> Sứ mệnh</h3>
-                                <p>Không ngừng đổi mới và phát triển để mang đến cho khách hàng những dịch vụ du lịch
-                                    chất lượng cao với giá cả hợp lý nhất.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="gia-tri" class="about-section">
-                        <h2>Giá trị cốt lõi</h2>
-                        <div class="core-values">
-                            <div class="value-item">
-                                <i class="fas fa-heart"></i>
-                                <h3>Tận tâm</h3>
-                                <p>Luôn đặt lợi ích và sự hài lòng của khách hàng lên hàng đầu</p>
-                            </div>
-                            <div class="value-item">
-                                <i class="fas fa-shield-alt"></i>
-                                <h3>Uy tín</h3>
-                                <p>Cam kết chất lượng dịch vụ và giá cả cạnh tranh</p>
-                            </div>
-                            <div class="value-item">
-                                <i class="fas fa-sync"></i>
-                                <h3>Đổi mới</h3>
-                                <p>Liên tục cập nhật và áp dụng công nghệ mới</p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="thanh-tuu" class="about-section">
-                        <h2>Thành tựu của chúng tôi</h2>
-                        <div class="about-stats">
-                            <div class="stat-item">
-                                <div class="stat-number">100,000+</div>
-                                <div class="stat-label">Khách hàng tin tưởng</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">1,000+</div>
-                                <div class="stat-label">Đối tác khách sạn</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number">500+</div>
-                                <div class="stat-label">Tour du lịch</div>
-                            </div>
-                        </div>
-                    </section>
+                <div class="language-column">
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/hk.png" class="language-flag">
+                        <span class="language-name">English (Hong Kong, SAR)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/nz.png" class="language-flag">
+                        <span class="language-name">English (New Zealand)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/us.png" class="language-flag">
+                        <span class="language-name">English (US)</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/cn.png" class="language-flag">
+                        <span class="language-name">简体中文</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/kr.png" class="language-flag">
+                        <span class="language-name">한국어</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/id.png" class="language-flag">
+                        <span class="language-name">Bahasa Indonesia</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/es.png" class="language-flag">
+                        <span class="language-name">Español</span>
+                    </div>
+                    <div class="language-item">
+                        <img src="https://flagcdn.com/w40/ru.png" class="language-flag">
+                        <span class="language-name">Русский</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-   
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-column">
-                <h3>CÔNG TY CỔ PHẦN TRUYỀN THÔNG Sky Travel</h3>
-                <p>Địa chỉ: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
-                <p>Văn phòng: 613 Âu Cơ, P. Phú Trung, Quận Tân Phú, TP. Hồ Chí Minh.</p>
-                <p>Điện thoại: 012 3456789 | Hotline: 1900 1234</p>
-                <p>Website: skytravel.com.vn | Email: skytravel@gmail.com</p>
-            </div>
-            <div class="footer-column">
-                <h3>Góc khách hàng</h3>
-                <ul>
-                    <li>Chính sách đặt tour</li>
-                    <li>Chính sách bảo mật</li>
-                    <li>Ý kiến khách hàng</li>
-                    <li>Phiếu góp ý</li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Đăng ký nhận thông tin khuyến mãi</h3>
-                <p>Nhập email để có cơ hội giảm 50% cho chuyến đi tiếp theo của Quý khách</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Email của bạn" required>
-                    <button type="submit">Gửi</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>GIẤY PHÉP KINH DOANH DỊCH VỤ LỮ HÀNH QUỐC TẾ</p>
-            <p>Số GP/ No: 79-042/2022/TCDL – GP LHQT</p>
-            <p>Do TCDL cấp ngày 30/11/2009 – Cấp đổi ngày 06/06/2022</p>
-        </div>
-    </footer>
-
-
-    <!-- Dropdown ngôn ngữ -->
-    <div class="language-dropdown" id="languageDropdown">
-        <div class="language-header">Chọn ngôn ngữ</div>
-        <div class="language-columns">
-
-        <div class="language-column">
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/au.png" class="language-flag">
-            <span class="language-name">English (Australia)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/in.png" class="language-flag">
-            <span class="language-name">English (India)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/ph.png" class="language-flag">
-            <span class="language-name">English (Philippines)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/gb.png" class="language-flag">
-            <span class="language-name">English (UK)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/tw.png" class="language-flag">
-            <span class="language-name">繁體中文</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/th.png" class="language-flag">
-            <span class="language-name">ไทย</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
-            <span class="language-name">Bahasa Malaysia</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/de.png" class="language-flag">
-            <span class="language-name">Deutsch</span>
-            </div>
-        </div>
-
-        <div class="language-column">
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/ca.png" class="language-flag">
-            <span class="language-name">English (Canada)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/my.png" class="language-flag">
-            <span class="language-name">English (Malaysia)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/sg.png" class="language-flag">
-            <span class="language-name">English (Singapore)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/intl.png" class="language-flag">
-            <span class="language-name">English (International)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/jp.png" class="language-flag">
-            <span class="language-name">日本語</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/vn.png" class="language-flag">
-            <span class="language-name highlight">Tiếng Việt</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/fr.png" class="language-flag">
-            <span class="language-name">Français</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/it.png" class="language-flag">
-            <span class="language-name">Italiano</span>
-            </div>
-        </div>
-
-        <div class="language-column">
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/hk.png" class="language-flag">
-            <span class="language-name">English (Hong Kong, SAR)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/nz.png" class="language-flag">
-            <span class="language-name">English (New Zealand)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/us.png" class="language-flag">
-            <span class="language-name">English (US)</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/cn.png" class="language-flag">
-            <span class="language-name">简体中文</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/kr.png" class="language-flag">
-            <span class="language-name">한국어</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/id.png" class="language-flag">
-            <span class="language-name">Bahasa Indonesia</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/es.png" class="language-flag">
-            <span class="language-name">Español</span>
-            </div>
-            <div class="language-item">
-            <img src="https://flagcdn.com/w40/ru.png" class="language-flag">
-            <span class="language-name">Русский</span>
-            </div>
-        </div>
-    </div>
 
 
 
-    <script>
-        const languageBtn = document.getElementById('languageBtn');
-        const languageDropdown = document.getElementById('languageDropdown');
-      
-        const currencyBtn = document.getElementById('currencyBtn');
-        const currencyDropdown = document.getElementById('currencyDropdown');
-      
-        // Toggle language dropdown
-        languageBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-      
-          const isLanguageOpen = languageDropdown.classList.contains('show');
-      
-          closeLanguageDropdown();
-          closeCurrencyDropdown();
-      
-          if (!isLanguageOpen) {
-            languageDropdown.classList.add('show');
-          }
-        });
-      
-        // Toggle currency dropdown
-        currencyBtn.addEventListener('click', (e) => {
-          e.stopPropagation();
-      
-          const isCurrencyOpen = currencyDropdown.classList.contains('show');
-      
-          closeLanguageDropdown();
-          closeCurrencyDropdown();
-      
-          if (!isCurrencyOpen) {
-            currencyDropdown.classList.add('show');
-          }
-        });
-      
-        // Đóng tất cả dropdown khi click ngoài
-        document.addEventListener('click', () => {
-          closeLanguageDropdown();
-          closeCurrencyDropdown();
-        });
-      
-        function closeLanguageDropdown() {
-          languageDropdown.classList.remove('show');
-        }
-      
-        function closeCurrencyDropdown() {
-          currencyDropdown.classList.remove('show');
-        }
+            <script>
+                const languageBtn = document.getElementById('languageBtn');
+                const languageDropdown = document.getElementById('languageDropdown');
 
+                const currencyBtn = document.getElementById('currencyBtn');
+                const currencyDropdown = document.getElementById('currencyDropdown');
 
-        // Xử lý active menu khi scroll
-        window.addEventListener('scroll', function () {
-            const sections = document.querySelectorAll('.about-section');
-            const menuItems = document.querySelectorAll('.sidebar-menu li');
+                // Toggle language dropdown
+                languageBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
 
-            let current = '';
+                    const isLanguageOpen = languageDropdown.classList.contains('show');
 
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 60) {
-                    current = section.getAttribute('id');
+                    closeLanguageDropdown();
+                    closeCurrencyDropdown();
+
+                    if (!isLanguageOpen) {
+                        languageDropdown.classList.add('show');
+                    }
+                });
+
+                // Toggle currency dropdown
+                currencyBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+
+                    const isCurrencyOpen = currencyDropdown.classList.contains('show');
+
+                    closeLanguageDropdown();
+                    closeCurrencyDropdown();
+
+                    if (!isCurrencyOpen) {
+                        currencyDropdown.classList.add('show');
+                    }
+                });
+
+                // Đóng tất cả dropdown khi click ngoài
+                document.addEventListener('click', () => {
+                    closeLanguageDropdown();
+                    closeCurrencyDropdown();
+                });
+
+                function closeLanguageDropdown() {
+                    languageDropdown.classList.remove('show');
                 }
-            });
 
-            menuItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.querySelector('a').getAttribute('href').substring(1) === current) {
-                    item.classList.add('active');
+                function closeCurrencyDropdown() {
+                    currencyDropdown.classList.remove('show');
                 }
-            });
-        });
-    </script>
+
+
+                // Xử lý active menu khi scroll
+                window.addEventListener('scroll', function () {
+                    const sections = document.querySelectorAll('.about-section');
+                    const menuItems = document.querySelectorAll('.sidebar-menu li');
+
+                    let current = '';
+
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        if (pageYOffset >= sectionTop - 60) {
+                            current = section.getAttribute('id');
+                        }
+                    });
+
+                    menuItems.forEach(item => {
+                        item.classList.remove('active');
+                        if (item.querySelector('a').getAttribute('href').substring(1) === current) {
+                            item.classList.add('active');
+                        }
+                    });
+                });
+            </script>
 </body>
 
 </html>
